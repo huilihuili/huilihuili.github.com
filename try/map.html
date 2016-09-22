@@ -31,13 +31,6 @@
             $("#btn").click(function () {
                 getLocation();  
             });  
-            $('script').each(function(index) {
-                    if($(this).attr('src')!=undefined){
-                        var src=$(this).attr('src');
-                        src = src.replace("http","https");
-                        $(this).attr('src',src);
-                    }
-                });
             getLocation();  
         });  
   
