@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/29/distinct/index.html">
 <meta property="og:site_name" content="Leagle的博客">
 <meta property="og:description" content="题目链接：网易2017春招笔试真题编程题集合第四题 12时间限制：1秒空间限制：32768K 小易有一个长度为n序列，小易想移除掉里面的重复元素，但是小易想是对于每种元素保留最后出现的那个。小易遇到了困难,希望你来帮助他。">
-<meta property="og:updated_time" content="2017-06-29T14:21:03.866Z">
+<meta property="og:updated_time" content="2017-07-02T04:45:48.110Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="消除重复元素">
 <meta name="twitter:description" content="题目链接：网易2017春招笔试真题编程题集合第四题 12时间限制：1秒空间限制：32768K 小易有一个长度为n序列，小易想移除掉里面的重复元素，但是小易想是对于每种元素保留最后出现的那个。小易遇到了困难,希望你来帮助他。">
@@ -173,6 +173,9 @@
 <h3 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a>输入例子:</h3><blockquote>
 <p>9<br>100 100 100 99 99 99 100 100 100</p>
 </blockquote>
+<h3 id="输出例子："><a href="#输出例子：" class="headerlink" title="输出例子："></a>输出例子：</h3><blockquote>
+<p>99 100</p>
+</blockquote>
 <h3 id="我的思路："><a href="#我的思路：" class="headerlink" title="我的思路："></a>我的思路：</h3><p>其实去重复元素的例子以前做过，但是以前做的都是保存重复元素的第一个元素。  </p>
 <p>用一个二维数组记录重复元素和重复元素的最后一个元素的位置，然后递增排序，就可以得到结果。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">#define MAX 50 </div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	int a[MAX], b[2][MAX], count = 0;// b数组用来记录除重数组，</div><div class="line">									//第一行是元素，第二行是位置 </div><div class="line">	</div><div class="line">	int n;</div><div class="line">	cin&gt;&gt;n;</div><div class="line">	for(int i = 0; i &lt; n; i++) </div><div class="line">		cin&gt;&gt;a[i];</div><div class="line">		 </div><div class="line">	b[0][0] = a[0];</div><div class="line">	b[1][0] = 0;</div><div class="line">	count++;</div><div class="line">	</div><div class="line">	int i, j;</div><div class="line">	for (i = 1; i &lt; n; i++) &#123;</div><div class="line">		for (j = 0; j &lt; count; j++) &#123; // 判断是否是重复元素 </div><div class="line">			if(a[i] == b[0][j]) &#123;</div><div class="line">				b[1][j] = i;  // 覆盖位置 </div><div class="line">				break;</div><div class="line">			&#125;		</div><div class="line">		&#125;</div><div class="line">		if (j == count) &#123;// 不是重复元素 </div><div class="line">			b[0][count] = a[i]; //插入数据 </div><div class="line">			b[1][count] = i;  //保存位置 </div><div class="line">			count++;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	//排序得到结果 </div><div class="line">	for (int i = 0; i &lt; count-1; i++) &#123;</div><div class="line">		int temp = i;</div><div class="line">		for (int j = i+1; j &lt; count; j++) &#123;</div><div class="line">			if (b[1][j] &lt; b[1][temp])</div><div class="line">				temp = j;</div><div class="line">		&#125;</div><div class="line">		if (temp != i) &#123;</div><div class="line">			int c = b[0][i];</div><div class="line">			b[0][i] = b[0][temp];</div><div class="line">			b[0][temp] = c;</div><div class="line">			</div><div class="line">			c = b[1][i];</div><div class="line">			b[1][i] = b[1][temp];</div><div class="line">			b[1][temp] = c;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	for (int i = 0; i &lt; count; i++) &#123;</div><div class="line">		if(i == 0)</div><div class="line">			cout&lt;&lt;b[0][i];</div><div class="line">		else</div><div class="line">			cout&lt;&lt;&apos; &apos;&lt;&lt;b[0][i];</div><div class="line">	&#125;</div><div class="line">	cout&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">结果虽然正确，但是感觉代码量还是有点庞大。</div></pre></td></tr></table></figure>
@@ -312,6 +315,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/07/02/magicBracelet/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          魔力手环
+        
+      </div>
+    </a>
   
   
     <a href="/2017/06/28/adjustOrder /" id="article-nav-older" class="article-nav-link-wrap">
@@ -462,6 +474,14 @@ MathJax.Hub.Queue(function() {
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">去除重复</a>
               </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">快速幂取余</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">矩阵相乘</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -511,7 +531,7 @@ MathJax.Hub.Queue(function() {
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">无名小卒&lt;br&gt;&lt;br&gt;其实我不是土木工程专业的。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">无名小卒&lt;br&gt;&lt;br&gt;他们都说我是土木工程专业的。</div>
   	  	
     	</section>
     

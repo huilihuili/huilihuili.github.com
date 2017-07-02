@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/26/dualCore/index.html">
 <meta property="og:site_name" content="Leagle的博客">
 <meta property="og:description" content="题目链接：网易2017春招笔试真题编程题集合第一题121. 时间限制：1秒2. 空间限制：32768K 一种双核CPU的两个核能够同时的处理任务，现在有n个已知数据量的任务需要交给CPU处理，假设已知CPU的每个核1秒可以处理1kb，每个核同时只能处理一项任务。n个任务可以按照任意顺序放入CPU进行处理，现在需要设计一个方案让CPU处理完这批任务所需的时间最少，求这个最小的时间。">
-<meta property="og:updated_time" content="2017-06-26T12:50:37.118Z">
+<meta property="og:updated_time" content="2017-07-02T05:50:34.207Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="双核处理">
 <meta name="twitter:description" content="题目链接：网易2017春招笔试真题编程题集合第一题121. 时间限制：1秒2. 空间限制：32768K 一种双核CPU的两个核能够同时的处理任务，现在有n个已知数据量的任务需要交给CPU处理，假设已知CPU的每个核1秒可以处理1kb，每个核同时只能处理一项任务。n个任务可以按照任意顺序放入CPU进行处理，现在需要设计一个方案让CPU处理完这批任务所需的时间最少，求这个最小的时间。">
@@ -161,10 +161,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>题目链接：<a href="https://www.nowcoder.com/questionTerminal/9ba85699e2824bc29166c92561da77fa" target="_blank" rel="external">网易2017春招笔试真题编程题集合第一题</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1. 时间限制：1秒</div><div class="line">2. 空间限制：32768K</div></pre></td></tr></table></figure></p>
-<p>一种双核CPU的两个核能够同时的处理任务，现在有n个已知数据量的任务需要交给CPU处理，假设已知CPU的每个核1秒可以处理1kb，每个核同时只能处理一项任务。n个任务可以按照任意顺序放入CPU进行处理，现在需要设计一个方案让CPU处理完这批任务所需的时间最少，求这个最小的时间。</p>
-<a id="more"></a>
+<p>一种双核CPU的两个核能够同时的处理任务，现在有n个已知数据量的任务需要交给CPU处理，假设已知CPU的每个核1秒可以处理1kb，每个核同时只能处理一项任务。n个任务可以按照任意顺序放入CPU进行处理，现在需要设计一个方案让CPU处理完这批任务所需的时间最少，求这个最小的时间。<br><a id="more"></a></p>
 <h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a>输入描述:</h3><blockquote>
-<p>输入包括两行：<br>第一行为整数n(1 ≤ n ≤ 50)<br>第二行为n个整数length<a href="1024 ≤ length[i] ≤ 4194304">i</a>，表示每个任务的长度为length[i]kb，每个数均为1024的倍数。</p>
+<p>输入包括两行：<br>第一行为整数n(1 ≤ n ≤ 50)<br>第二行为n个整数length[i] (1024 ≤ length[i] ≤ 4194304)，表示每个任务的长度为length[i]kb，每个数均为1024的倍数。</p>
 </blockquote>
 <h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a>输出描述:</h3><blockquote>
 <p>输出一个整数，表示最少需要处理的时间</p>
@@ -182,7 +181,7 @@
 </ol>
 <h3 id="我的思路："><a href="#我的思路：" class="headerlink" title="我的思路："></a>我的思路：</h3><p>把这些任务分成两组，然后选择两组时间差最小的那一次分组，然后再取时间比较大的一组。</p>
 <p>怎么才能把所有的分组找出来呢？头脑中就想出了“全排列”的概念。好像只是有点点联系，没有必要的联系。</p>
-<p>于是我开始思考所有的分组，假如有5个任务，那么只考虑一组的任务分配，另一组就是剩下的任务数。所以第一组的分配为：1，2，第一组如果分配3和4的话，就重复了，再者说，<br>$ C_5^1=C_5^4，C_5^2=C_5^3 $，所以第二组的分配对应为：4，3。假如一共有6个任务，那么第一组的分配为：1,2,3，第二组的分配为：5,4,3。所以我想到了以前做的概率题，经常用到的一个公式就是：$ C_m^n $。</p>
+<p>于是我开始思考所有的分组，假如有5个任务，那么只考虑一组的任务分配，另一组就是剩下的任务数。所以第一组的分配为：1，2，第一组如果分配3和4的话，就重复了，再者说，$ C_5^1=C_5^4，C_5^2=C_5^3 $，所以第二组的分配对应为：4，3。假如一共有6个任务，那么第一组的分配为：1,2,3，第二组的分配为：5,4,3。所以我想到了以前做的概率题，经常用到的一个公式就是：$ C_m^n $。</p>
 <p>假如有5个任务，那么所有的分配情况就是：$ C_5^1 和 C_5^2$。假如有6个任务，那么所有的分配情况就是：$ C_6^1、 C_6^2 和 C_6^3 $。所以就发现了规律了，假如有n个任务，那么所有的分组情况就是$C_n^1 C_n^2 C_n^3\ldots C_n^\frac n2$。</p>
 <p>想了想，好想运算量非常非常大。算了，不管了，先把它搞出来吧。</p>
 <h3 id="组合部分："><a href="#组合部分：" class="headerlink" title="组合部分："></a>组合部分：</h3><p>关于$ C_m^n $，我应该怎么把所有的情况找出来呢？我就想起来以前做的8皇后问题，用的回溯法，然后就开始试着写代码了。</p>
@@ -200,11 +199,11 @@
 </blockquote>
 <p><strong>核心概述：</strong></p>
 <blockquote>
-<p>设$V[i,j]$为前$i$个物品放到背包容量为$j$的背包中为最优解，设$v_i$为第$i$个物品的价值，$w_j$为第$i$个物品的重量。对于$V[i,j]$。<br>(1) 第$i$个物品放不到背包里，则最优解为$V[i-1,j]$<br>(2) 第$i$个物品可以放进背包里，则最优解为前$i-1$个物品的最优解$V[i-1,j-w_i]$与第$i$个物品价值的和，或者就是前$i-1$个物品的最优解，这里取两个中的最大值，即$V[i,j]=Max{V[i-1,j-w_i]+v_i,V[i-1,j]}$</p>
+<p>设$V[i,j]$为前$i$个物品放到背包容量为$j$的背包中为最优解，设$v_i$为第$i$个物品的价值，$w_j$为第$i$个物品的重量。对于$V[i,j]$。<br>(1) 第$i$个物品放不到背包里，则最优解为$V[i-1,j]$<br>(2) 第$i$个物品可以放进背包里，则最优解为前$i-1$个物品的最优解$V[i-1,j-w_i]$与第$i$个物品价值的和，或者就是前$i-1$个物品的最优解，这里取两个中的最大值，即$V[i,j]=Max \lbrace V[i-1,j-w_i]+v_i,V[i-1,j] \rbrace$</p>
 </blockquote>
 <p><strong>核心公式：</strong></p>
 <blockquote>
-<p>$V[i,j] = V[i-1,j],  w_i &gt; j  $<br>$V[i,j] = Max(V[i-1,j-w_i]+v_i,V[i-1,j]), w_i &lt;= j$<br>当$j&gt;=0$时,$V[0,j]=0$;当$i&gt;=0$时，$V[i,0]$=0</p>
+<p>$V[i,j] = V[i-1,j], w_i &gt; j$<br>$V[i,j] = Max \lbrace V[i-1,j-w_i]+v_i,V[i-1,j] \rbrace , w_i \leq j$<br>当$j \geq 0$时,$V[0,j]=0$;当$i \geq 0$时，$V[i,0]$=0</p>
 </blockquote>
 <p><strong>情景再现：</strong></p>
 <blockquote>
@@ -308,7 +307,7 @@
 <p>其实，计算第$i$行的最优值时，只会用到第$i-1$行的数据，用不到$i-2$行的数据，所以可以把二维数组缩减为以为一维数组。但是这样的话，就找不到背包里所包含的物品。</p>
 <p><strong>核心公式：</strong></p>
 <blockquote>
-<p>为了混淆，这里用$B$代表一维数组，$B[j]$ 是容量为$j$的最优值，$w_i$代表第$i$个物品的容量，$v_i$代表第$i$个物品的价值。<br>最优值$B[j]=Max(B[j-w_i]+v_i,B[j])$ &nbsp;&nbsp;&nbsp;&nbsp;仅当$w_i &lt;= j$</p>
+<p>为了混淆，这里用$B$代表一维数组，$B[j]$ 是容量为$j$的最优值，$w_i$代表第$i$个物品的容量，$v_i$代表第$i$个物品的价值。<br>最优值$B[j]=Max \lbrace B[j-w_i]+v_i,B[j] \rbrace$ &nbsp;&nbsp;&nbsp;&nbsp;仅当$w_i &lt;= j$</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">伪代码：</div><div class="line">for i=1...number</div><div class="line">	for j=weitht...1</div><div class="line">    	w[i] &lt;= j </div><div class="line">        	B[j] = max&#123; B[j-w[i]] + v[i], B[j] &#125;</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">注意：</div><div class="line">j是递减的，为什么呢？</div><div class="line">如果j是递增的话，会重复的放入某一件物品。</div><div class="line">自己写写一位数组的变化就知道了。</div></pre></td></tr></table></figure>
@@ -713,6 +712,14 @@ MathJax.Hub.Queue(function() {
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">去除重复</a>
               </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">快速幂取余</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">矩阵相乘</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -762,7 +769,7 @@ MathJax.Hub.Queue(function() {
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">无名小卒&lt;br&gt;&lt;br&gt;其实我不是土木工程专业的。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">无名小卒&lt;br&gt;&lt;br&gt;他们都说我是土木工程专业的。</div>
   	  	
     	</section>
     

@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 网易 | Leagle的博客</title>
+  <title>魔力手环 | Leagle的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="无名小卒其实我不是土木工程专业的。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Leagle的博客">
-<meta property="og:url" content="http://yoursite.com/tags/网易/index.html">
+  <meta name="description" content="题目链接：网易2017春招笔试真题编程题集合第五题 12时间限制：1秒空间限制：32768K 小易拥有一个拥有魔力的手环上面有n个数字(构成一个环),当这个魔力手环每次使用魔力的时候就会发生一种奇特的变化：每个数字会变成自己跟后面一个数字的和(最后一个数字的后面一个数字是第一个),一旦某个位置的数字大于等于100就马上对100取模(比如某个位置变为103,就会自动变为3).现在给出这个魔力手环的构">
+<meta name="keywords" content="编程,网易,快速幂取余,矩阵相乘">
+<meta property="og:type" content="article">
+<meta property="og:title" content="魔力手环">
+<meta property="og:url" content="http://yoursite.com/2017/07/02/magicBracelet/index.html">
 <meta property="og:site_name" content="Leagle的博客">
-<meta property="og:description" content="无名小卒其实我不是土木工程专业的。">
+<meta property="og:description" content="题目链接：网易2017春招笔试真题编程题集合第五题 12时间限制：1秒空间限制：32768K 小易拥有一个拥有魔力的手环上面有n个数字(构成一个环),当这个魔力手环每次使用魔力的时候就会发生一种奇特的变化：每个数字会变成自己跟后面一个数字的和(最后一个数字的后面一个数字是第一个),一旦某个位置的数字大于等于100就马上对100取模(比如某个位置变为103,就会自动变为3).现在给出这个魔力手环的构">
+<meta property="og:updated_time" content="2017-07-02T05:22:35.025Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leagle的博客">
-<meta name="twitter:description" content="无名小卒其实我不是土木工程专业的。">
+<meta name="twitter:title" content="魔力手环">
+<meta name="twitter:description" content="题目链接：网易2017春招笔试真题编程题集合第五题 12时间限制：1秒空间限制：32768K 小易拥有一个拥有魔力的手环上面有n个数字(构成一个环),当这个魔力手环每次使用魔力的时候就会发生一种奇特的变化：每个数字会变成自己跟后面一个数字的和(最后一个数字的后面一个数字是第一个),一旦某个位置的数字大于等于100就马上对100取模(比如某个位置变为103,就会自动变为3).现在给出这个魔力手环的构">
   
     <link rel="alternative" href="/atom.xml" title="Leagle的博客" type="application/atom+xml">
   
@@ -138,36 +140,233 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-magicBracelet" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/02/magicBracelet/" class="archive-article-date">
-  	<time datetime="2017-07-02T04:48:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-02</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/02/magicBracelet/">魔力手环</a>
+    <h1 class="article-title" itemprop="name">
+      魔力手环
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/07/02/magicBracelet/" class="archive-article-date">
+  	<time datetime="2017-07-02T04:48:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>题目链接：<a href="https://www.nowcoder.com/questionTerminal/79c639e02bc94e6b919e3372c8e1dc5e" target="_blank" rel="external">网易2017春招笔试真题编程题集合第五题</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">时间限制：1秒</div><div class="line">空间限制：32768K</div></pre></td></tr></table></figure>
+<p>小易拥有一个拥有魔力的手环上面有n个数字(构成一个环),当这个魔力手环每次使用魔力的时候就会发生一种奇特的变化：每个数字会变成自己跟后面一个数字的和(最后一个数字的后面一个数字是第一个),一旦某个位置的数字大于等于100就马上对100取模(比如某个位置变为103,就会自动变为3).现在给出这个魔力手环的构成，请你计算出使用k次魔力之后魔力手环的状态。</p>
+<a id="more"></a>
+<h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a>输入描述:</h3><blockquote>
+<p>输入数据包括两行：<br>第一行为两个整数n(2 ≤ n ≤ 50)和k(1 ≤ k ≤ 2000000000),以空格分隔<br>第二行为魔力手环初始的n个数，以空格分隔。范围都在0至99.</p>
+</blockquote>
+<h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a>输出描述:</h3><blockquote>
+<p>输出魔力手环使用k次之后的状态，以空格分隔，行末无空格。</p>
+</blockquote>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入:"></a>输入:</h3><blockquote>
+<p>3 2<br>1 2 3</p>
+</blockquote>
+<h3 id="输出："><a href="#输出：" class="headerlink" title="输出："></a>输出：</h3><blockquote>
+<p>8 9 7</p>
+</blockquote>
+<h3 id="我的思路："><a href="#我的思路：" class="headerlink" title="我的思路："></a>我的思路：</h3><p>当我拿到题目的那一刻，我在想，有这么简单，一定在逗我，我猜我写完之后，一定会超时。试试吧。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">#define MAX 50</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	</div><div class="line">	int k, n;</div><div class="line">	int a[MAX];</div><div class="line">	cin&gt;&gt;n&gt;&gt;k;</div><div class="line">	for (int i = 0; i &lt; n; i++)</div><div class="line">		cin&gt;&gt;a[i]; </div><div class="line">	for (int i = 0; i &lt; k; i++) &#123;</div><div class="line">		int temp = a[0];</div><div class="line">		for (int j = 0;j &lt; n - 1; j++) &#123;</div><div class="line">			a[j] += a[j+1];</div><div class="line">			if (a[j] &gt;= 100) </div><div class="line">				a[j] %= 100;</div><div class="line">		&#125;</div><div class="line">		a[n-1] += temp;</div><div class="line">		if (a[n-1] &gt;= 100)</div><div class="line">			a[n-1] %= 100;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	for (int i = 0; i &lt; n; i++) &#123;</div><div class="line">		if (i == 0)</div><div class="line">			cout&lt;&lt;a[i];</div><div class="line">		else</div><div class="line">			cout&lt;&lt;&apos; &apos;&lt;&lt;a[i];</div><div class="line">	&#125;</div><div class="line">	cout&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">结果：果然运行超时。</div><div class="line"></div><div class="line">我是自己想呢？还是直接看评论？</div><div class="line">自己想了一小会，算了，不想了，直接看评论吧。</div><div class="line">还好我及时看了评论，不然我这辈子都想不出来。</div></pre></td></tr></table></figure>
+<h3 id="快速幂取余："><a href="#快速幂取余：" class="headerlink" title="快速幂取余："></a>快速幂取余：</h3><p><strong>参考内容：</strong><br><a href="http://blog.csdn.net/u013174702/article/details/43761197" target="_blank" rel="external">快速幂取余算法</a><br><a href="http://blog.csdn.net/zheng548/article/details/71075163" target="_blank" rel="external">矩阵快速幂的应用题 – 魔力手环</a>  </p>
+<p><strong>核心公式：</strong><br>$a^b$ mod $c$ = $(a^{2^\frac b2})$ mod $c$，b 是偶数<br>$a^b$ mod $c$ = $(a \ast a^{2^\frac b2})$ mod $c$，b 是奇数  </p>
+<p><strong>例子演示：</strong><br>$a^{10} = a^{2^5} = a^2 \ast a^{4^2} = a^2 \ast a^{8^1} = a^2 \ast a^8 \ast a^{16^0} = a^2 \ast a^8$<br>$a^7 = a \ast a^{2^3} = a \ast a^2 \ast a^{4^1} = a \ast a^2 \ast a^4 \ast a^{8^0} = a \ast a^2 \ast a^4$</p>
+<p><strong>核心代码一：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">int quickMod(int a, int b, int c)  </div><div class="line">&#123;  </div><div class="line">    int ans = 1;  </div><div class="line">    while (b)  </div><div class="line">    &#123;  </div><div class="line">        if (b % 2 == 1)  </div><div class="line">            ans = (ans * a) % c;  </div><div class="line">        b /= 2;  </div><div class="line">        a = (a * a) % c;  </div><div class="line">    &#125;  </div><div class="line">    return ans;  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>例子演示：</strong><br>$a^{10}$</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">ans</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$a$</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^2$</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">$1 \ast a^2$</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^4$</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">$1 \ast a^2$</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^8$</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">$1 \ast a^2 \ast a^8$</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^{16}$</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">结束</td>
+</tr>
+</tbody>
+</table>
+<p>$a^7$</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">ans</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$a$</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">$1 \ast a$</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^2$</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">$1 \ast a \ast a^2$</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^4$</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">$1 \ast a \ast a^2 \ast a^4$</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^8$</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">结束</td>
+</tr>
+</tbody>
+</table>
+<p>10 的二进制为：1010<br>$a^{10} = a^2 \ast a^8$<br>7 的二进制为：111<br>$a^7 = a \ast a^2 \ast a^4$<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">有没有发现规律？凡是为1的就乘以a^n(n为（1、2、4、8……）)。</div></pre></td></tr></table></figure></p>
+<p><strong>核心代码二：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">int quickMod(int a, int b, int n)  </div><div class="line">&#123;  </div><div class="line">    int ans = 1;  </div><div class="line">    while (b)  </div><div class="line">    &#123;    </div><div class="line">        if (b &amp; 0x1) //如果二进制位为1  </div><div class="line">            ans = ans * a % n;  </div><div class="line">        a = a * a % n;  </div><div class="line">        b &gt;&gt;= 1 //b向又移1位  </div><div class="line">    &#125;  </div><div class="line">    return ans;  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>例子演示：</strong> </p>
+<p>$a^{10}$</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">ans</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$a$</td>
+<td style="text-align:center">1010</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^2$</td>
+<td style="text-align:center">0101</td>
+<td style="text-align:center">$1 \ast a^2$</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^4$</td>
+<td style="text-align:center">0010</td>
+<td style="text-align:center">$1 \ast a^2$</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^8$</td>
+<td style="text-align:center">0001</td>
+<td style="text-align:center">$1 \ast a^2 \ast a^8$</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^{16}$</td>
+<td style="text-align:center">0000</td>
+<td style="text-align:center">结束</td>
+</tr>
+</tbody>
+</table>
+<p>$a^7$</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">ans</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$a$</td>
+<td style="text-align:center">111</td>
+<td style="text-align:center">$1 \ast a$</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^2$</td>
+<td style="text-align:center">011</td>
+<td style="text-align:center">$1 \ast a \ast a^2$</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^4$</td>
+<td style="text-align:center">001</td>
+<td style="text-align:center">$1 \ast a \ast a^2 \ast a^4$</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^8$</td>
+<td style="text-align:center">000</td>
+<td style="text-align:center">结束</td>
+</tr>
+</tbody>
+</table>
+<h3 id="大神思路："><a href="#大神思路：" class="headerlink" title="大神思路："></a>大神思路：</h3><blockquote>
+<p>大神说：<br>如输入A = [[1, 2, 3]], k = 2。<br>我们可以构造一个这样的矩阵B[[1, 0, 1], [1, 1, 0], [0, 1, 1]]，使得$A*B^k$相当于A转换k次后的样子。<br>于是原问题就变成求矩阵快速幂。快速幂取余中，$a^k$ % c =  $(a \% c)^k \% c$。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">实际上，把ans当做矩阵A，a当做矩阵B，当然矩阵B的生成也是有规律的。</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">#define N 50</div><div class="line">int ans[1][N]; </div><div class="line">int a[N][N] = &#123;0&#125;;</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	//两个矩阵相乘，a1和a2是两个矩阵，m和n是最终矩阵的行数和列数</div><div class="line">	//row为第一个数组的列数或者第二个数组的行数 </div><div class="line">	//type为0：代表 a = a*a;type为1：代表ans = ans*a </div><div class="line">	void Core(int a1[N][N], int a2[N][N], int m, int n, int row, int type);</div><div class="line">	</div><div class="line">	void power(int k, int n);//快速幂取余，k代表次数，n代表个数 </div><div class="line">	</div><div class="line">	int n, k;</div><div class="line">	cin&gt;&gt;n&gt;&gt;k;</div><div class="line">	</div><div class="line">	//输入矩阵ans </div><div class="line">	for (int i = 0; i &lt; n; i++) </div><div class="line">		cin&gt;&gt;ans[0][i];</div><div class="line">		</div><div class="line">	//生成矩阵a </div><div class="line">	for (int i = 0; i &lt; n; i++) &#123;</div><div class="line">		a[i][i] = 1;</div><div class="line">		a[(i+1) % n][i] = 1;</div><div class="line">	&#125;		</div><div class="line">	</div><div class="line">	//计算矩阵快速幂 </div><div class="line">	power(k, n);</div><div class="line">	</div><div class="line">	//输出矩阵ans </div><div class="line">	for (int i = 0; i &lt; n; i++) &#123;</div><div class="line">		if (i == 0)</div><div class="line">			cout&lt;&lt;ans[0][i];</div><div class="line">		else</div><div class="line">			cout&lt;&lt;&apos; &apos;&lt;&lt;ans[0][i];</div><div class="line">	&#125;</div><div class="line">	cout&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">void Core(int a1[N][N], int a2[N][N], int m, int n, int row, int type) &#123;</div><div class="line">	int temp[N][N] = &#123;0&#125;;</div><div class="line">	</div><div class="line">	for(int i = 0; i &lt; m; i++) &#123;   //两个矩阵相乘，保存到temp中 </div><div class="line">		for (int j = 0; j &lt; n; j++) &#123;</div><div class="line">			for (int k = 0; k &lt; row; k++) &#123;</div><div class="line">				if(a1[i][k] == 0 || a2[k][j] == 0) //剪枝</div><div class="line">					continue;</div><div class="line">				temp[i][j] += a1[i][k] * a2[k][j];</div><div class="line">			&#125;	</div><div class="line">			</div><div class="line">			if (temp[i][j] &gt;= 100) //100取余运算</div><div class="line">				temp[i][j] %= 100;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	if (type == 1) &#123;  </div><div class="line">		for(int i = 0; i &lt; m; i++) //给ans赋值 </div><div class="line">			for (int j = 0; j &lt; n; j++) </div><div class="line">				ans[i][j] = temp[i][j]; </div><div class="line">	&#125; else if (type == 0) &#123;   </div><div class="line">		for(int i = 0; i &lt; m; i++)  //给a赋值</div><div class="line">			for (int j = 0; j &lt; n; j++) </div><div class="line">				a[i][j] = temp[i][j];</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">void power(int k, int n) &#123;</div><div class="line">	while(k) &#123;</div><div class="line">		if (k &amp; 0x1 == 1)</div><div class="line">			Core(ans, a, 1, n, n, 1);</div><div class="line">		Core(a, a, n, n, n, 0);</div><div class="line">		k &gt;&gt;= 1; </div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/weChat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,7 +390,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -204,241 +403,87 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/02/magicBracelet/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/29/distinct/" class="archive-article-date">
-  	<time datetime="2017-06-29T14:19:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/29/distinct/">消除重复元素</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">去除重复</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试/" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/28/adjustOrder /" class="archive-article-date">
-  	<time datetime="2017-06-28T14:29:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/28/adjustOrder /">调整队形</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试/" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/27/goToCompany/" class="archive-article-date">
-  	<time datetime="2017-06-27T11:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/27/goToCompany/">赶去公司</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">最小值</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试/" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/26/dualCore/" class="archive-article-date">
-  	<time datetime="2017-06-26T07:07:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/26/dualCore/">双核处理</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">01背包</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试/" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/06/29/distinct/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">消除重复元素</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
   
 
-    
+  
+
+  
 
 
           </div>
@@ -461,9 +506,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
