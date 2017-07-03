@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 编程 | Leagle的博客</title>
+  <title>工作安排 | Leagle的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="无名小卒其实我不是土木工程专业的。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Leagle的博客">
-<meta property="og:url" content="http://yoursite.com/tags/编程/index.html">
+  <meta name="description" content="题目链接：网易2017春招笔试真题编程题集合第六题 12时间限制：1秒空间限制：32768K 现在有n位工程师和6项工作(编号为0至5)，现在给出每个人能够胜任的工作序号表(用一个字符串表示，比如：045，表示某位工程师能够胜任0号，4号，5号工作)。现在需要进行工作安排，每位工程师只能被安排到自己能够胜任的工作当中去，两位工程师不能安排到同一项工作当中去。如果两种工作安排中有一个人被安排在的工作">
+<meta name="keywords" content="编程,网易,回溯法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="工作安排">
+<meta property="og:url" content="http://yoursite.com/2017/07/03/workplan/index.html">
 <meta property="og:site_name" content="Leagle的博客">
-<meta property="og:description" content="无名小卒其实我不是土木工程专业的。">
+<meta property="og:description" content="题目链接：网易2017春招笔试真题编程题集合第六题 12时间限制：1秒空间限制：32768K 现在有n位工程师和6项工作(编号为0至5)，现在给出每个人能够胜任的工作序号表(用一个字符串表示，比如：045，表示某位工程师能够胜任0号，4号，5号工作)。现在需要进行工作安排，每位工程师只能被安排到自己能够胜任的工作当中去，两位工程师不能安排到同一项工作当中去。如果两种工作安排中有一个人被安排在的工作">
+<meta property="og:updated_time" content="2017-07-03T10:51:01.855Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leagle的博客">
-<meta name="twitter:description" content="无名小卒其实我不是土木工程专业的。">
+<meta name="twitter:title" content="工作安排">
+<meta name="twitter:description" content="题目链接：网易2017春招笔试真题编程题集合第六题 12时间限制：1秒空间限制：32768K 现在有n位工程师和6项工作(编号为0至5)，现在给出每个人能够胜任的工作序号表(用一个字符串表示，比如：045，表示某位工程师能够胜任0号，4号，5号工作)。现在需要进行工作安排，每位工程师只能被安排到自己能够胜任的工作当中去，两位工程师不能安排到同一项工作当中去。如果两种工作安排中有一个人被安排在的工作">
   
     <link rel="alternative" href="/atom.xml" title="Leagle的博客" type="application/atom+xml">
   
@@ -138,36 +140,85 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-workplan" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/03/workplan/" class="archive-article-date">
-  	<time datetime="2017-07-03T10:49:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-03</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/03/workplan/">工作安排</a>
+    <h1 class="article-title" itemprop="name">
+      工作安排
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/07/03/workplan/" class="archive-article-date">
+  	<time datetime="2017-07-03T10:49:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>题目链接：<a href="https://www.nowcoder.com/questionTerminal/728fcf136ca1488b8043c82fd2b181da" target="_blank" rel="external">网易2017春招笔试真题编程题集合第六题</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">时间限制：1秒</div><div class="line">空间限制：32768K</div></pre></td></tr></table></figure>
+<p>现在有n位工程师和6项工作(编号为0至5)，现在给出每个人能够胜任的工作序号表(用一个字符串表示，比如：045，表示某位工程师能够胜任0号，4号，5号工作)。现在需要进行工作安排，每位工程师只能被安排到自己能够胜任的工作当中去，两位工程师不能安排到同一项工作当中去。如果两种工作安排中有一个人被安排在的工作序号不一样就被视为不同的工作安排，现在需要计算出有多少种不同工作安排计划。</p>
+<a id="more"></a>
+<h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a>输入描述:</h3><blockquote>
+<p>输入数据有n+1行：<br>第一行为工程师人数n(1 ≤ n ≤ 6)<br>接下来的n行，每行一个字符串表示第i(1 ≤ i ≤ n)个人能够胜任的工作(字符串不一定等长的)</p>
+</blockquote>
+<h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a>输出描述:</h3><blockquote>
+<p>输出一个整数，表示有多少种不同的工作安排方案</p>
+</blockquote>
+<h3 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a>输入例子:</h3><blockquote>
+<p>6<br>012345<br>012345<br>012345<br>012345<br>012345<br>012345</p>
+</blockquote>
+<h3 id="输出例子："><a href="#输出例子：" class="headerlink" title="输出例子："></a>输出例子：</h3><blockquote>
+<p>720</p>
+</blockquote>
+<h3 id="我的思路："><a href="#我的思路：" class="headerlink" title="我的思路："></a>我的思路：</h3><p>其实，我理解的意思是，所有的工作都要做完，根据上面的例子，所有的情况应该是$6^6$，但是上面的答案是$6!$，我就理解成了，所有的工作都要做完，并且所有的人都要参与进去。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line">这道题目题意有点模糊</div><div class="line">我理解的意思：所有的工作都要做完，而且所有的成员都要参与进去</div><div class="line">下面的代码就是实现上述功能 </div><div class="line">*/</div><div class="line"></div><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">#include&lt;string.h&gt;</div><div class="line">#define N 6</div><div class="line"></div><div class="line">int sum = 0;</div><div class="line">int b[N];</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	void fun(string a[], int m, int n, int k);</div><div class="line">	bool judge(int n, int k);</div><div class="line">	string a[6] = &#123;</div><div class="line">		&quot;012345&quot;, &quot;012345&quot;, &quot;012345&quot;, &quot;012345&quot;, &quot;012345&quot;, &quot;012345&quot;</div><div class="line">	&#125;;</div><div class="line">	int n = 6;</div><div class="line">	int k = 6;</div><div class="line">	fun(a, 0, n, k);</div><div class="line">	cout&lt;&lt;sum&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//确保所有的人都参与 </div><div class="line">bool judge(int n, int k) &#123;</div><div class="line">	for (int i = 0; i &lt; k; i++) &#123;</div><div class="line">		int j;</div><div class="line">		for (j = 0; j &lt; n; j++)&#123;</div><div class="line">			 if (b[j] == i)</div><div class="line">			 	break;</div><div class="line">		&#125;</div><div class="line">		if (j == n)</div><div class="line">			return false;</div><div class="line">	&#125; </div><div class="line">	return true;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//回溯求解 </div><div class="line">void fun(string a[], int m, int n, int k) </div><div class="line">&#123;</div><div class="line">	if (m == n &amp;&amp; judge(n, k))</div><div class="line">		sum++;</div><div class="line">	else &#123;</div><div class="line">		for (int i = 0; i &lt; k; i++) &#123;</div><div class="line">			for (int j = 0; j &lt; a[i].size(); j++) &#123;</div><div class="line">				if((int)(a[i][j] - &apos;0&apos;) == m)&#123;</div><div class="line">					b[m] = i;</div><div class="line">					fun(a, m+1, n, k);		</div><div class="line">				&#125;	 </div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">结果：运行错误，没有通过所有实例</div><div class="line">后来看了一下评论，原来意思理解错了。</div><div class="line">真正意思：</div><div class="line">①：每个人做一件事情，且唯一</div><div class="line">②：不用把所有的工作做完</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line">这道题目题意有点模糊</div><div class="line">其实意思是：</div><div class="line">1、所有工程师都必须有事可做，且只能做一件事情。</div><div class="line">2、不必所有事都要做。	 </div><div class="line">下面的代码就是实现上述功能 </div><div class="line">*/</div><div class="line"></div><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">#include&lt;string.h&gt;</div><div class="line">#define N 6</div><div class="line"></div><div class="line">int sum = 0;</div><div class="line">char b[N];</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	void fun(string a[], int m, int k);</div><div class="line">	bool judge(int n);</div><div class="line">	string a[N]; </div><div class="line">	int k;</div><div class="line">	cin&gt;&gt;k;</div><div class="line">	for(int i = 0; i &lt; k; i++)</div><div class="line">		cin&gt;&gt;a[i];</div><div class="line">	</div><div class="line">	fun(a, 0, k);</div><div class="line">	cout&lt;&lt;sum&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//判断有没有人做相同的工作 </div><div class="line">bool judge(int n) &#123;</div><div class="line">	for (int i = 0; i &lt; n - 1; i++) &#123;</div><div class="line">		for (int j = i + 1; j &lt; n; j++) &#123;</div><div class="line">			if (b[i] == b[j])</div><div class="line">				return false;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	return true;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//回溯法求解 </div><div class="line">void fun(string a[], int m, int k) </div><div class="line">&#123;</div><div class="line">	if (m == k) &#123;</div><div class="line">		sum++;</div><div class="line">	&#125;	</div><div class="line">	else &#123;</div><div class="line">		for (int j = 0; j &lt; a[m].size(); j++) &#123;</div><div class="line">			b[m] = a[m][j];</div><div class="line">			if (judge(m+1))</div><div class="line">				fun(a, m + 1, k);	 </div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">我是用了个双重循环来进行判断。</div><div class="line">看到其他的评论里，有人是用一个一维数组来记录这份工作是否被做，这样做，感觉效率更高一些。</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line">这道题目题意有点模糊</div><div class="line">其实意思是：</div><div class="line">1、所有工程师都必须有事可做，且只能做一件事情。</div><div class="line">2、不必所有事都要做。	 </div><div class="line">下面的代码就是实现上述功能 </div><div class="line">*/</div><div class="line"></div><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">#include&lt;string.h&gt;</div><div class="line">#define N 6</div><div class="line"></div><div class="line">int sum = 0;</div><div class="line">int b[N] = &#123;0&#125;;</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	void fun(string a[], int m, int k);</div><div class="line">	string a[N]; </div><div class="line">	int k;</div><div class="line">	cin&gt;&gt;k;</div><div class="line">	for(int i = 0; i &lt; k; i++)</div><div class="line">		cin&gt;&gt;a[i];</div><div class="line">	</div><div class="line">	fun(a, 0, k);</div><div class="line">	cout&lt;&lt;sum&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//回溯法求解 </div><div class="line">void fun(string a[], int m, int k) </div><div class="line">&#123;</div><div class="line">	if (m == k) &#123;</div><div class="line">		sum++;</div><div class="line">	&#125;	</div><div class="line">	else &#123;</div><div class="line">		for (int j = 0; j &lt; a[m].size(); j++) &#123;</div><div class="line">			int temp = (int)(a[m][j] - &apos;0&apos;);</div><div class="line">			if (b[temp] == 0) &#123;</div><div class="line">				b[temp] = 1;</div><div class="line">				fun(a, m + 1, k);</div><div class="line">				b[temp] = 0;</div><div class="line">			&#125;		 </div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/weChat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -187,7 +238,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -200,302 +251,87 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/03/workplan/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/02/magicBracelet/" class="archive-article-date">
-  	<time datetime="2017-07-02T04:48:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/02/magicBracelet/">魔力手环</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">快速幂取余</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">矩阵相乘</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试/" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/29/distinct/" class="archive-article-date">
-  	<time datetime="2017-06-29T14:19:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/29/distinct/">消除重复元素</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">去除重复</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试/" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/28/adjustOrder /" class="archive-article-date">
-  	<time datetime="2017-06-28T14:29:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/28/adjustOrder /">调整队形</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试/" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/27/goToCompany/" class="archive-article-date">
-  	<time datetime="2017-06-27T11:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/27/goToCompany/">赶去公司</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">最小值</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试/" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/26/dualCore/" class="archive-article-date">
-  	<time datetime="2017-06-26T07:07:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/26/dualCore/">双核处理</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">01背包</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试/" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/07/02/magicBracelet/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">魔力手环</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
   
 
-    
+  
+
+  
 
 
           </div>
@@ -518,9 +354,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
