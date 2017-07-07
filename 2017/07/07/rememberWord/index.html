@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>消除重复元素 | Leagle的博客</title>
+  <title>小易记单词 | Leagle的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="题目链接：网易2017春招笔试真题编程题集合第四题 12时间限制：1秒空间限制：32768K 小易有一个长度为n序列，小易想移除掉里面的重复元素，但是小易想是对于每种元素保留最后出现的那个。小易遇到了困难,希望你来帮助他。">
-<meta name="keywords" content="编程,网易,去除重复">
+  <meta name="description" content="题目链接：网易2017春招笔试真题编程题集合第十题 12时间限制：1秒空间限制：32768K 小易参与了一个记单词的小游戏。游戏开始系统提供了m个不同的单词，小易记忆一段时间之后需要在纸上写出他记住的单词。小易一共写出了n个他能记住的单词，如果小易写出的单词是在系统提供的，将获得这个单词长度的平方的分数。注意小易写出的单词可能重复，但是对于每个正确的单词只能计分一次。">
+<meta name="keywords" content="编程,网易,标记已用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="消除重复元素">
-<meta property="og:url" content="http://yoursite.com/2017/06/29/distinct/index.html">
+<meta property="og:title" content="小易记单词">
+<meta property="og:url" content="http://yoursite.com/2017/07/07/rememberWord/index.html">
 <meta property="og:site_name" content="Leagle的博客">
-<meta property="og:description" content="题目链接：网易2017春招笔试真题编程题集合第四题 12时间限制：1秒空间限制：32768K 小易有一个长度为n序列，小易想移除掉里面的重复元素，但是小易想是对于每种元素保留最后出现的那个。小易遇到了困难,希望你来帮助他。">
-<meta property="og:updated_time" content="2017-07-02T04:45:48.110Z">
+<meta property="og:description" content="题目链接：网易2017春招笔试真题编程题集合第十题 12时间限制：1秒空间限制：32768K 小易参与了一个记单词的小游戏。游戏开始系统提供了m个不同的单词，小易记忆一段时间之后需要在纸上写出他记住的单词。小易一共写出了n个他能记住的单词，如果小易写出的单词是在系统提供的，将获得这个单词长度的平方的分数。注意小易写出的单词可能重复，但是对于每个正确的单词只能计分一次。">
+<meta property="og:updated_time" content="2017-07-07T09:44:35.561Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="消除重复元素">
-<meta name="twitter:description" content="题目链接：网易2017春招笔试真题编程题集合第四题 12时间限制：1秒空间限制：32768K 小易有一个长度为n序列，小易想移除掉里面的重复元素，但是小易想是对于每种元素保留最后出现的那个。小易遇到了困难,希望你来帮助他。">
+<meta name="twitter:title" content="小易记单词">
+<meta name="twitter:description" content="题目链接：网易2017春招笔试真题编程题集合第十题 12时间限制：1秒空间限制：32768K 小易参与了一个记单词的小游戏。游戏开始系统提供了m个不同的单词，小易记忆一段时间之后需要在纸上写出他记住的单词。小易一共写出了n个他能记住的单词，如果小易写出的单词是在系统提供的，将获得这个单词长度的平方的分数。注意小易写出的单词可能重复，但是对于每个正确的单词只能计分一次。">
   
     <link rel="alternative" href="/atom.xml" title="Leagle的博客" type="application/atom+xml">
   
@@ -140,50 +140,53 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-distinct" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-rememberWord" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      消除重复元素
+      小易记单词
     </h1>
   
 
         
-        <a href="/2017/06/29/distinct/" class="archive-article-date">
-  	<time datetime="2017-06-29T14:19:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-29</time>
+        <a href="/2017/07/07/rememberWord/" class="archive-article-date">
+  	<time datetime="2017-07-07T09:44:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>题目链接：<a href="https://www.nowcoder.com/questionTerminal/0d241147265d4f64aacd1e2d3e46abc6" target="_blank" rel="external">网易2017春招笔试真题编程题集合第四题</a></p>
+        <p>题目链接：<a href="https://www.nowcoder.com/questionTerminal/0b821b5d214445388eade1d304b976b2" target="_blank" rel="external">网易2017春招笔试真题编程题集合第十题</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">时间限制：1秒</div><div class="line">空间限制：32768K</div></pre></td></tr></table></figure>
-<p>小易有一个长度为n序列，小易想移除掉里面的重复元素，但是小易想是对于每种元素保留最后出现的那个。小易遇到了困难,希望你来帮助他。</p>
+<p>小易参与了一个记单词的小游戏。游戏开始系统提供了m个不同的单词，小易记忆一段时间之后需要在纸上写出他记住的单词。小易一共写出了n个他能记住的单词，如果小易写出的单词是在系统提供的，将获得这个单词长度的平方的分数。注意小易写出的单词可能重复，但是对于每个正确的单词只能计分一次。</p>
 <a id="more"></a>
 <h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a>输入描述:</h3><blockquote>
-<p>输入包括两行：<br>第一行为序列长度n(1 ≤ n ≤ 50)<br>第二行为n个数sequence[i] (1 ≤ sequence[i] ≤ 1000),以空格分隔</p>
+<p>输入数据包括三行：  </p>
+<p>第一行为两个整数n(1 ≤ n ≤ 50)和m(1 ≤ m ≤ 50)。以空格分隔  </p>
+<p>第二行为n个字符串，表示小易能记住的单词，以空格分隔，每个单词的长度小于等于50。  </p>
+<p>第三行为m个字符串，系统提供的单词，以空格分隔，每个单词的长度小于等于50。</p>
 </blockquote>
 <h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a>输出描述:</h3><blockquote>
-<p>输出消除重复元素之后的序列，以空格分隔，行末无空格</p>
+<p>输出一个整数表示小易能获得的分数</p>
 </blockquote>
-<h3 id="输入例子"><a href="#输入例子" class="headerlink" title="输入例子:"></a>输入例子:</h3><blockquote>
-<p>9<br>100 100 100 99 99 99 100 100 100</p>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入:"></a>输入:</h3><blockquote>
+<p>3 4<br>apple orange strawberr<br>strawberry orange grapefruit watermelon</p>
 </blockquote>
-<h3 id="输出例子："><a href="#输出例子：" class="headerlink" title="输出例子："></a>输出例子：</h3><blockquote>
-<p>99 100</p>
+<h3 id="输出："><a href="#输出：" class="headerlink" title="输出："></a>输出：</h3><blockquote>
+<p>136</p>
 </blockquote>
-<h3 id="我的思路："><a href="#我的思路：" class="headerlink" title="我的思路："></a>我的思路：</h3><p>其实去重复元素的例子以前做过，但是以前做的都是保存重复元素的第一个元素。  </p>
-<p>用一个二维数组记录重复元素和重复元素的最后一个元素的位置，然后递增排序，就可以得到结果。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">#define MAX 50 </div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	int a[MAX], b[2][MAX], count = 0;// b数组用来记录除重数组，</div><div class="line">									//第一行是元素，第二行是位置 </div><div class="line">	</div><div class="line">	int n;</div><div class="line">	cin&gt;&gt;n;</div><div class="line">	for(int i = 0; i &lt; n; i++) </div><div class="line">		cin&gt;&gt;a[i];</div><div class="line">		 </div><div class="line">	b[0][0] = a[0];</div><div class="line">	b[1][0] = 0;</div><div class="line">	count++;</div><div class="line">	</div><div class="line">	int i, j;</div><div class="line">	for (i = 1; i &lt; n; i++) &#123;</div><div class="line">		for (j = 0; j &lt; count; j++) &#123; // 判断是否是重复元素 </div><div class="line">			if(a[i] == b[0][j]) &#123;</div><div class="line">				b[1][j] = i;  // 覆盖位置 </div><div class="line">				break;</div><div class="line">			&#125;		</div><div class="line">		&#125;</div><div class="line">		if (j == count) &#123;// 不是重复元素 </div><div class="line">			b[0][count] = a[i]; //插入数据 </div><div class="line">			b[1][count] = i;  //保存位置 </div><div class="line">			count++;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	//排序得到结果 </div><div class="line">	for (int i = 0; i &lt; count-1; i++) &#123;</div><div class="line">		int temp = i;</div><div class="line">		for (int j = i+1; j &lt; count; j++) &#123;</div><div class="line">			if (b[1][j] &lt; b[1][temp])</div><div class="line">				temp = j;</div><div class="line">		&#125;</div><div class="line">		if (temp != i) &#123;</div><div class="line">			int c = b[0][i];</div><div class="line">			b[0][i] = b[0][temp];</div><div class="line">			b[0][temp] = c;</div><div class="line">			</div><div class="line">			c = b[1][i];</div><div class="line">			b[1][i] = b[1][temp];</div><div class="line">			b[1][temp] = c;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	for (int i = 0; i &lt; count; i++) &#123;</div><div class="line">		if(i == 0)</div><div class="line">			cout&lt;&lt;b[0][i];</div><div class="line">		else</div><div class="line">			cout&lt;&lt;&apos; &apos;&lt;&lt;b[0][i];</div><div class="line">	&#125;</div><div class="line">	cout&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">结果虽然正确，但是感觉代码量还是有点庞大。</div></pre></td></tr></table></figure>
-<h3 id="大神的思路："><a href="#大神的思路：" class="headerlink" title="大神的思路："></a>大神的思路：</h3><blockquote>
-<p>①：倒着去除重复元素，那么保留的就是正序的最后一个<br>②：然后倒着输出就是结果  </p>
-<p>也许这样说不容易理解，看了代码，就会立马明白。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">#define MAX 50 </div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	int a[MAX], b[MAX], count = 0;</div><div class="line">	int n;</div><div class="line">	cin&gt;&gt;n;</div><div class="line">	for(int i = 0; i &lt; n; i++) </div><div class="line">		cin&gt;&gt;a[i];</div><div class="line">		 </div><div class="line">	b[0] = a[n-1];</div><div class="line">	count++;</div><div class="line">	</div><div class="line">	int i, j;</div><div class="line">	for (i = n-2; i &gt;= 0; i--) &#123; // 倒着去除重复元素 </div><div class="line">		for (j = 0; j &lt; count; j++) &#123;</div><div class="line">			if(a[i] == b[j])</div><div class="line">				break;	</div><div class="line">		&#125;</div><div class="line">		if (j == count) &#123;</div><div class="line">			b[count++] = a[i];</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	for (int i = count-1; i &gt;= 0; i--) &#123;// 倒着输出 </div><div class="line">		if(i == count-1)</div><div class="line">			cout&lt;&lt;b[i];</div><div class="line">		else</div><div class="line">			cout&lt;&lt;&apos; &apos;&lt;&lt;b[i];</div><div class="line">	&#125;</div><div class="line">	cout&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="我的思路："><a href="#我的思路：" class="headerlink" title="我的思路："></a>我的思路：</h3><p>起初我还想一个字符一个字符进行比较，遇到空格便是一个单词。</p>
+<p>然后意识到，字符串也是可以比较的。  </p>
+<p>又遇到了不能重复，我就用了一个数组来表示答对的单词。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">#include &lt;math.h&gt;</div><div class="line">using namespace std;</div><div class="line">#define  N 50</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	string s1[N], s2[N], s3[N];</div><div class="line">	int sum = 0, score = 0;</div><div class="line">	int m, n;</div><div class="line">	cin&gt;&gt;m&gt;&gt;n;</div><div class="line">	for (int i = 0; i &lt; m; i++)</div><div class="line">		cin&gt;&gt;s1[i];</div><div class="line">	for (int i = 0; i &lt; n; i++)</div><div class="line">		cin&gt;&gt;s2[i];	</div><div class="line">	for (int i = 0; i &lt; m; i++) &#123;</div><div class="line">		bool flag = false;</div><div class="line">		for (int j = 0; j &lt; n ; j++) &#123;</div><div class="line">			if (s1[i] == s2[j]) &#123;</div><div class="line">				flag = true;</div><div class="line">				break;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		if (flag) &#123;</div><div class="line">			bool isIN = false;</div><div class="line">			for (int k = 0; k &lt; sum; k++) &#123;</div><div class="line">				if (s3[k] == s1[i]) &#123;</div><div class="line">					isIN = true;</div><div class="line">					break;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">			if (!isIN) &#123;</div><div class="line">				s3[sum++] = s1[i];</div><div class="line">				score += pow(s1[i].size(), 2); </div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	cout&lt;&lt;score&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>结果是对的，我看了一下评论，看到一个人和我做的一样，看到他下面的评论，可以用vis标记系统单词已经被记住的。</p>
+<p>我想到了工作安排那一道题，我好想也是这么做的，为什么就记不住呢？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">改进版：</div><div class="line"></div><div class="line">#include &lt;iostream&gt;</div><div class="line">#include &lt;math.h&gt;</div><div class="line">using namespace std;</div><div class="line">#define  N 50</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	string s1[N], s2[N];</div><div class="line">	int s[N] = &#123;0&#125;, score = 0;</div><div class="line">	int m, n;</div><div class="line">	cin&gt;&gt;m&gt;&gt;n;</div><div class="line">	for (int i = 0; i &lt; m; i++)</div><div class="line">		cin&gt;&gt;s1[i];</div><div class="line">	for (int i = 0; i &lt; n; i++)</div><div class="line">		cin&gt;&gt;s2[i];	</div><div class="line">	for (int i = 0; i &lt; m; i++) &#123;</div><div class="line">		int j;</div><div class="line">		for (j = 0; j &lt; n ; j++) &#123;</div><div class="line">			if (s1[i] == s2[j]) &#123;</div><div class="line">				if (!s[j]) &#123;</div><div class="line">					score += pow(s1[i].size(), 2);</div><div class="line">					s[j] = 1;</div><div class="line">				&#125;</div><div class="line">				break;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	cout&lt;&lt;score&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
       
 
       
@@ -235,7 +238,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">去除重复</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">标记已用</a>
         		</li>
       		
 		</ul>
@@ -302,7 +305,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/06/29/distinct/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/07/rememberWord/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -316,18 +319,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/07/02/magicBracelet/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          魔力手环
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/06/28/adjustOrder /" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">调整队形</div>
+    <a href="/2017/07/07/chessboard/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">涂棋盘</div>
       <i class="icon-circle-right"></i>
     </a>
   
