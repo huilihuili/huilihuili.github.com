@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>小易记单词 | Leagle的博客</title>
+  <title>堆砖块 | Leagle的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="题目链接：网易2017春招笔试真题编程题集合第十题 12时间限制：1秒空间限制：32768K 小易参与了一个记单词的小游戏。游戏开始系统提供了m个不同的单词，小易记忆一段时间之后需要在纸上写出他记住的单词。小易一共写出了n个他能记住的单词，如果小易写出的单词是在系统提供的，将获得这个单词长度的平方的分数。注意小易写出的单词可能重复，但是对于每个正确的单词只能计分一次。">
-<meta name="keywords" content="编程,网易,标记已用">
+  <meta name="description" content="题目链接：网易2017春招笔试真题编程题集合第十一题 12时间限制：1秒空间限制：32768K 小易有n块砖块，每一块砖块有一个高度。小易希望利用这些砖块堆砌两座相同高度的塔。为了让问题简单，砖块堆砌就是简单的高度相加，某一块砖只能使用在一座塔中一次。小易现在让能够堆砌出来的两座塔的高度尽量高，小易能否完成呢。">
+<meta name="keywords" content="编程,网易,动态规划">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小易记单词">
-<meta property="og:url" content="http://yoursite.com/2017/07/07/rememberWord/index.html">
+<meta property="og:title" content="堆砖块">
+<meta property="og:url" content="http://yoursite.com/2017/07/10/bricks/index.html">
 <meta property="og:site_name" content="Leagle的博客">
-<meta property="og:description" content="题目链接：网易2017春招笔试真题编程题集合第十题 12时间限制：1秒空间限制：32768K 小易参与了一个记单词的小游戏。游戏开始系统提供了m个不同的单词，小易记忆一段时间之后需要在纸上写出他记住的单词。小易一共写出了n个他能记住的单词，如果小易写出的单词是在系统提供的，将获得这个单词长度的平方的分数。注意小易写出的单词可能重复，但是对于每个正确的单词只能计分一次。">
-<meta property="og:updated_time" content="2017-07-07T09:44:35.561Z">
+<meta property="og:description" content="题目链接：网易2017春招笔试真题编程题集合第十一题 12时间限制：1秒空间限制：32768K 小易有n块砖块，每一块砖块有一个高度。小易希望利用这些砖块堆砌两座相同高度的塔。为了让问题简单，砖块堆砌就是简单的高度相加，某一块砖只能使用在一座塔中一次。小易现在让能够堆砌出来的两座塔的高度尽量高，小易能否完成呢。">
+<meta property="og:updated_time" content="2017-07-10T08:15:17.428Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小易记单词">
-<meta name="twitter:description" content="题目链接：网易2017春招笔试真题编程题集合第十题 12时间限制：1秒空间限制：32768K 小易参与了一个记单词的小游戏。游戏开始系统提供了m个不同的单词，小易记忆一段时间之后需要在纸上写出他记住的单词。小易一共写出了n个他能记住的单词，如果小易写出的单词是在系统提供的，将获得这个单词长度的平方的分数。注意小易写出的单词可能重复，但是对于每个正确的单词只能计分一次。">
+<meta name="twitter:title" content="堆砖块">
+<meta name="twitter:description" content="题目链接：网易2017春招笔试真题编程题集合第十一题 12时间限制：1秒空间限制：32768K 小易有n块砖块，每一块砖块有一个高度。小易希望利用这些砖块堆砌两座相同高度的塔。为了让问题简单，砖块堆砌就是简单的高度相加，某一块砖只能使用在一座塔中一次。小易现在让能够堆砌出来的两座塔的高度尽量高，小易能否完成呢。">
   
     <link rel="alternative" href="/atom.xml" title="Leagle的博客" type="application/atom+xml">
   
@@ -140,52 +140,69 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-rememberWord" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-bricks" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      小易记单词
+      堆砖块
     </h1>
   
 
         
-        <a href="/2017/07/07/rememberWord/" class="archive-article-date">
-  	<time datetime="2017-07-07T09:44:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-07</time>
+        <a href="/2017/07/10/bricks/" class="archive-article-date">
+  	<time datetime="2017-07-10T08:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>题目链接：<a href="https://www.nowcoder.com/questionTerminal/0b821b5d214445388eade1d304b976b2" target="_blank" rel="external">网易2017春招笔试真题编程题集合第十题</a></p>
+        <p>题目链接：<a href="https://www.nowcoder.com/questionTerminal/040924ba0e64423b8a3fe2f75a56934a" target="_blank" rel="external">网易2017春招笔试真题编程题集合第十一题</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">时间限制：1秒</div><div class="line">空间限制：32768K</div></pre></td></tr></table></figure>
-<p>小易参与了一个记单词的小游戏。游戏开始系统提供了m个不同的单词，小易记忆一段时间之后需要在纸上写出他记住的单词。小易一共写出了n个他能记住的单词，如果小易写出的单词是在系统提供的，将获得这个单词长度的平方的分数。注意小易写出的单词可能重复，但是对于每个正确的单词只能计分一次。</p>
+<p>小易有n块砖块，每一块砖块有一个高度。小易希望利用这些砖块堆砌两座相同高度的塔。为了让问题简单，砖块堆砌就是简单的高度相加，某一块砖只能使用在一座塔中一次。小易现在让能够堆砌出来的两座塔的高度尽量高，小易能否完成呢。</p>
 <a id="more"></a>
 <h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a>输入描述:</h3><blockquote>
-<p>输入数据包括三行：  </p>
-<p>第一行为两个整数n(1 ≤ n ≤ 50)和m(1 ≤ m ≤ 50)。以空格分隔  </p>
-<p>第二行为n个字符串，表示小易能记住的单词，以空格分隔，每个单词的长度小于等于50。  </p>
-<p>第三行为m个字符串，系统提供的单词，以空格分隔，每个单词的长度小于等于50。</p>
+<p>输入包括两行：<br>第一行为整数n(1 ≤ n ≤ 50)，即一共有n块砖块<br>第二行为n个整数，表示每一块砖块的高度height[i] (1 ≤ height[i] ≤ 500000)</p>
 </blockquote>
 <h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a>输出描述:</h3><blockquote>
-<p>输出一个整数表示小易能获得的分数</p>
+<p>如果小易能堆砌出两座高度相同的塔，输出最高能拼凑的高度，如果不能则输出-1.<br>保证答案不大于500000。</p>
 </blockquote>
 <h3 id="输入"><a href="#输入" class="headerlink" title="输入:"></a>输入:</h3><blockquote>
-<p>3 4<br>apple orange strawberr<br>strawberry orange grapefruit watermelon</p>
+<p>3<br>2 3 5</p>
 </blockquote>
 <h3 id="输出："><a href="#输出：" class="headerlink" title="输出："></a>输出：</h3><blockquote>
-<p>136</p>
+<p>5</p>
 </blockquote>
-<h3 id="我的思路："><a href="#我的思路：" class="headerlink" title="我的思路："></a>我的思路：</h3><p>起初我还想一个字符一个字符进行比较，遇到空格便是一个单词。</p>
-<p>然后意识到，字符串也是可以比较的。  </p>
-<p>又遇到了不能重复，我就用了一个数组来表示答对的单词。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">#include &lt;math.h&gt;</div><div class="line">using namespace std;</div><div class="line">#define  N 50</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	string s1[N], s2[N], s3[N];</div><div class="line">	int sum = 0, score = 0;</div><div class="line">	int m, n;</div><div class="line">	cin&gt;&gt;m&gt;&gt;n;</div><div class="line">	for (int i = 0; i &lt; m; i++)</div><div class="line">		cin&gt;&gt;s1[i];</div><div class="line">	for (int i = 0; i &lt; n; i++)</div><div class="line">		cin&gt;&gt;s2[i];	</div><div class="line">	for (int i = 0; i &lt; m; i++) &#123;</div><div class="line">		bool flag = false;</div><div class="line">		for (int j = 0; j &lt; n ; j++) &#123;</div><div class="line">			if (s1[i] == s2[j]) &#123;</div><div class="line">				flag = true;</div><div class="line">				break;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		if (flag) &#123;</div><div class="line">			bool isIN = false;</div><div class="line">			for (int k = 0; k &lt; sum; k++) &#123;</div><div class="line">				if (s3[k] == s1[i]) &#123;</div><div class="line">					isIN = true;</div><div class="line">					break;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">			if (!isIN) &#123;</div><div class="line">				s3[sum++] = s1[i];</div><div class="line">				score += pow(s1[i].size(), 2); </div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	cout&lt;&lt;score&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>结果是对的，我看了一下评论，看到一个人和我做的一样，看到他下面的评论，可以用vis标记系统单词已经被记住的。</p>
-<p>我想到了工作安排那一道题，我好想也是这么做的，为什么就记不住呢？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">改进版：</div><div class="line"></div><div class="line">#include &lt;iostream&gt;</div><div class="line">#include &lt;math.h&gt;</div><div class="line">using namespace std;</div><div class="line">#define  N 50</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	string s1[N], s2[N];</div><div class="line">	int s[N] = &#123;0&#125;, score = 0;</div><div class="line">	int m, n;</div><div class="line">	cin&gt;&gt;m&gt;&gt;n;</div><div class="line">	for (int i = 0; i &lt; m; i++)</div><div class="line">		cin&gt;&gt;s1[i];</div><div class="line">	for (int i = 0; i &lt; n; i++)</div><div class="line">		cin&gt;&gt;s2[i];	</div><div class="line">	for (int i = 0; i &lt; m; i++) &#123;</div><div class="line">		int j;</div><div class="line">		for (j = 0; j &lt; n ; j++) &#123;</div><div class="line">			if (s1[i] == s2[j]) &#123;</div><div class="line">				if (!s[j]) &#123;</div><div class="line">					score += pow(s1[i].size(), 2);</div><div class="line">					s[j] = 1;</div><div class="line">				&#125;</div><div class="line">				break;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	cout&lt;&lt;score&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="我的思路："><a href="#我的思路：" class="headerlink" title="我的思路："></a>我的思路：</h3><p>这不就是01背包问题吗？我就快马加鞭的写了一通。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">using namespace std;</div><div class="line">#define N 50</div><div class="line">#define MAX 500001</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	int a[N],b[MAX]=&#123;0&#125;;</div><div class="line">	</div><div class="line">	int sum = 0;</div><div class="line">	int n;</div><div class="line">	cin&gt;&gt;n;</div><div class="line">	</div><div class="line">	for (int i = 0; i &lt; n; i++) &#123;</div><div class="line">		cin&gt;&gt;a[i];</div><div class="line">		sum += a[i];</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	if (sum % 2 != 0) &#123;</div><div class="line">		cout&lt;&lt;-1&lt;&lt;endl;</div><div class="line">		return 0;</div><div class="line">	&#125;</div><div class="line">	else</div><div class="line">		sum /= 2;</div><div class="line">	</div><div class="line">	for (int i = 0; i &lt; n; i++) &#123;</div><div class="line">		int value = a[i];</div><div class="line">		for (int j = sum; j &gt;= 1; j--) &#123;</div><div class="line">			int temp = b[j - value] + value; </div><div class="line">			if (j &gt;= value &amp;&amp; temp &gt; b[j])</div><div class="line">				b[j] = temp; </div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	if (b[sum] == sum)</div><div class="line">		cout&lt;&lt;sum&lt;&lt;endl;</div><div class="line">	else</div><div class="line">		cout&lt;&lt;-1&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">结果：没有通过所有实例，原来不是所有的砖块都要用到，比如3,3,5那么答案就是3。这就和01背包相差甚远了。</div></pre></td></tr></table></figure>
+<h3 id="参考1："><a href="#参考1：" class="headerlink" title="参考1："></a>参考1：</h3><blockquote>
+<p><a href="http://blog.csdn.net/ctxdecs/article/details/25882407" target="_blank" rel="external">双塔问题</a></p>
+</blockquote>
+<p>大致意思就是这样，dp[i][j] 表示高度分别为i和j是否存在。若存在即为1，若不存在即为0。  </p>
+<p>dp[0][0] = 1 代表存在高度分别为0和0的情况，比如什么都不放。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">#include&lt;vector&gt;</div><div class="line">using namespace std;</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;	</div><div class="line">	int sum = 0, n;</div><div class="line">	cin&gt;&gt;n;</div><div class="line">	vector&lt;int&gt; a(n);</div><div class="line">	</div><div class="line">	for (int i = 0; i &lt; n; i++) &#123;</div><div class="line">		cin &gt;&gt; a[i];</div><div class="line">		sum += a[i];</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	sum /= 2;</div><div class="line">	</div><div class="line">	</div><div class="line">	vector&lt; vector&lt;int&gt; &gt; dp(2, vector&lt;int&gt;(sum + 1, 0));</div><div class="line">	dp[0][0] = 1;</div><div class="line">	for (int i = 0; i &lt; n; i++) &#123;</div><div class="line">		int value = a[i];</div><div class="line">		for (int j = sum; j &gt;= 0; j--) &#123;</div><div class="line">			for (int k = sum; k &gt;= 0; k--) &#123;</div><div class="line">				if (j &gt;= value)</div><div class="line">					dp[j][k] = dp[j][k] || dp[j - value][k];</div><div class="line">				if (k &gt;= value)</div><div class="line">					dp[j][k] = dp[j][k] || dp[j][k - value];</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	for (int i = 1; i &lt;= sum; i++) &#123;</div><div class="line">		if (dp[i][i] == 1) &#123;</div><div class="line">			cout&lt;&lt;i&lt;&lt;endl;</div><div class="line">			return 0;</div><div class="line">		&#125;	</div><div class="line">	&#125;</div><div class="line">	cout&lt;&lt;&quot;-1&quot;&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">结果：内存超限</div></pre></td></tr></table></figure>
+<h3 id="参考2："><a href="#参考2：" class="headerlink" title="参考2："></a>参考2：</h3><blockquote>
+<p><a href="https://www.nowcoder.com/questionTerminal/040924ba0e64423b8a3fe2f75a56934a" target="_blank" rel="external">古典文化的评论</a><br>参考1里面把这种方法已经讲的很详细了，我就不多说了。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">#include&lt;vector&gt;</div><div class="line">using namespace std;</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	int n;</div><div class="line">	cin&gt;&gt;n;</div><div class="line">	</div><div class="line">	vector&lt;int&gt; a(n + 1), sum(n + 1);</div><div class="line">	</div><div class="line">	for (int i = 1; i &lt;= n; i++)</div><div class="line">		cin&gt;&gt;a[i];</div><div class="line">  </div><div class="line">	sum[0] = 0;</div><div class="line">	for (int i = 1; i &lt;= n; i++) &#123;</div><div class="line">		sum[i] = a[i] + sum[i - 1];</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	vector&lt; vector&lt;int&gt; &gt; dp(n + 1, vector&lt;int&gt;(sum[n] + 1, -1));</div><div class="line">	</div><div class="line">	</div><div class="line">	dp[0][0] = 0;</div><div class="line">	for (int i = 1; i &lt;= n; i++) &#123;</div><div class="line">		int value = a[i];</div><div class="line">		</div><div class="line">		for (int j = sum[i]; j &gt;= 0; j--) &#123;</div><div class="line">			dp[i][j] = dp[i-1][j];</div><div class="line">			</div><div class="line">			if (j + value &lt;= sum[i] &amp;&amp; dp[i - 1][j + value] != -1) &#123; </div><div class="line">				dp[i][j] = max(dp[i][j], dp[i - 1][j + value]);</div><div class="line">			&#125;</div><div class="line">			</div><div class="line">			if (value &gt;= j &amp;&amp; dp[i - 1][value - j] != -1) &#123;</div><div class="line">				dp[i][j] = max(dp[i][j], dp[i - 1][value - j] + j);</div><div class="line">			&#125; </div><div class="line">			</div><div class="line">			if (j &gt; value &amp;&amp; dp[i - 1][j - value] != -1) &#123;</div><div class="line">				dp[i][j] = max(dp[i][j], dp[i - 1][j - value] + value);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	if (dp[n][0] == 0)</div><div class="line">		cout&lt;&lt;&quot;-1&quot;&lt;&lt;endl;</div><div class="line">	else</div><div class="line">		cout&lt;&lt;dp[n][0]&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">结果：内存超限。</div></pre></td></tr></table></figure>
+<p>还记得01背包将多维数组变成一维数组，这个可不可以变成一维数组呢？答案是不可以，只能缩短为二位数组，因为 dp[i][j] = dp[i-1][j]，它始终要用到前面一行的同为j列的结果。</p>
+<p>0的时候第一行<br>1的时候第二行(可以用第一行的结果)<br>2的时候第一行(覆盖第一行（0）的数据，可以用第二行（1）的结果)<br>3的时候第二行(覆盖第二行（2）的数据，可以用第一行（2）的结果)  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">#include&lt;vector&gt;</div><div class="line">using namespace std;</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	int n;</div><div class="line">	cin&gt;&gt;n;</div><div class="line">	 </div><div class="line">	vector&lt;int&gt; a(n + 1);</div><div class="line">	vector&lt;int&gt; sum(n+1);</div><div class="line">	</div><div class="line">	sum[0] = 0;</div><div class="line">	for (int i = 1; i &lt;= n; i++) &#123;</div><div class="line">		cin&gt;&gt;a[i];</div><div class="line">		sum[i] = a[i] + sum[i - 1];</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	vector&lt; vector&lt;int&gt; &gt; dp(2, vector&lt;int&gt;(sum[n] + 1, -1));</div><div class="line">	dp[0][0] = 0;</div><div class="line">	</div><div class="line">	for (int i = 1; i &lt;= n; i++) &#123;</div><div class="line">		int value = a[i];</div><div class="line">		for (int j = sum[i]; j &gt;= 0; j--) &#123;</div><div class="line">			dp[i &amp; 1][j] = dp[ (i-1) &amp; 1][j];</div><div class="line">			if (j + value &lt;= sum[i] &amp;&amp; dp[ (i-1) &amp; 1][j + value] != -1) &#123; </div><div class="line">				dp[i &amp; 1][j] = max(dp[i &amp; 1][j], dp[ (i-1) &amp; 1][j + value]);</div><div class="line">			&#125;</div><div class="line">			if (value &gt;= j &amp;&amp; dp[ (i-1) &amp; 1][value - j] != -1) &#123;</div><div class="line">				dp[i &amp; 1][j] = max(dp[i &amp; 1][j], dp[ (i-1) &amp; 1][value - j] + j);</div><div class="line">			&#125; </div><div class="line">			if (j &gt;= value &amp;&amp; dp[ (i-1) &amp; 1][j - value] != -1) &#123;</div><div class="line">				dp[i &amp; 1][j] = max(dp[i &amp; 1][j], dp[ (i-1) &amp; 1][j - value] + value);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	if (dp[n &amp; 1][0] == 0)</div><div class="line">		cout&lt;&lt;&quot;-1&quot;&lt;&lt;endl;</div><div class="line">	else</div><div class="line">		cout&lt;&lt;dp[n &amp; 1][0]&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">结果：成功。</div><div class="line"></div><div class="line">不过我有一点始终不明白，上述有四种情况，分别是：</div><div class="line">第一种：不放</div><div class="line">第二种：放到矮的那一堆，但是依旧是矮的（（j + value） &lt;= sum[i]）</div><div class="line">第三种：放到矮的那一堆，但是变成高的了（value &gt;= j）</div><div class="line">第四种：放到高的那一堆（j &gt;= value）</div><div class="line"></div><div class="line">第二种的时候，j可能大于value，j也有可能小于value，也就是说：</div><div class="line">满足第二种情况的时候有时候也满足第三种或第四种的条件，但是它不属于第三种或第四种情况，但是它会执行。</div><div class="line">满足第三种情况的时候有时候也满足第二种条件，但是它不属于第二种情况，但是它会执行。</div><div class="line">满足第四种情况的时候有时候也满足第二种条件，但是它不属于第二种情况，但是它会执行。</div><div class="line"></div><div class="line">但是结果是正确的，我始终想不通。</div></pre></td></tr></table></figure>
+<h3 id="参考3："><a href="#参考3：" class="headerlink" title="参考3："></a>参考3：</h3><blockquote>
+<p><a href="https://www.nowcoder.com/questionTerminal/040924ba0e64423b8a3fe2f75a56934a" target="_blank" rel="external">minnnng的评论</a>   </p>
+<p>假设砖块分为A，B两堆，dp[i][j]中的j表示B-A的长度。而dp[i][j]的值则表示当B-A的值为j时，A的最大长度是多少。  </p>
+<p>因为B-A有可能是负的，所以j整体偏移sum个长度，即2*sum+1。dp[0][0] 代表相差 （-sum），dp[0][sum]代表相差0，dp[0][2$\ast$sum]代表相差sum。</p>
+<p>dp[i][j] = dp[i-1][j] 表示我不用第i块砖<br>dp[i][j] = max(dp[i-1][j+h] + h, dp[i][j]) 表示我把砖放在A堆。<br>dp[i][j] = max(dp[i-1][j-h], dp[i][j]) 表示我把砖放在B堆。</p>
+<p>以上语句摘抄与上述评论中的内容，唯一不同的是，我dp[i][j]表示B-A的值为j时，A的最大长度。    </p>
+<p>我认为这种思路更有说服性，简单明了，不会错失所有情况。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line">#include &lt;iostream&gt;</div><div class="line">#include&lt;vector&gt;</div><div class="line">using namespace std;</div><div class="line">int main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">	int n;</div><div class="line">	cin&gt;&gt;n; </div><div class="line">	vector&lt;int&gt; a(n + 1);</div><div class="line">	vector&lt;int&gt; sum(n+1);</div><div class="line">  	</div><div class="line">	sum[0] = 0;</div><div class="line">	for (int i = 1; i &lt;= n; i++) &#123;</div><div class="line">		cin&gt;&gt;a[i];</div><div class="line">		sum[i] = a[i] + sum[i - 1];</div><div class="line">	&#125;</div><div class="line">	vector&lt; vector&lt;int&gt; &gt; dp(2, vector&lt;int&gt;(2 * sum[n] + 1, -1));</div><div class="line">	dp[0][sum[n]] = 0;</div><div class="line">	</div><div class="line">	for (int i = 1; i &lt;= n; i++) &#123;</div><div class="line">		int value = a[i];</div><div class="line">		for (int j = sum[n] + sum[i]; j &gt;= sum[n] - sum[i]; j--) &#123;</div><div class="line">			</div><div class="line">			dp[i &amp; 1][j] = dp[ (i-1) &amp; 1][j];</div><div class="line">			</div><div class="line">			if ((j + value) &lt;= (sum[n] + sum[i]) &amp;&amp; dp[ (i-1) &amp; 1][j + value] != -1) </div><div class="line">				dp[i &amp; 1][j] = max(dp[i &amp; 1][j], dp[ (i-1) &amp; 1][j + value] + value);</div><div class="line">			</div><div class="line">				</div><div class="line">			if ((j - value) &gt;= (sum[n] - sum[i]) &amp;&amp; dp[ (i-1) &amp; 1][j - value] != -1)</div><div class="line">				dp[i &amp; 1][j] = max(dp[i &amp; 1][j], dp[ (i-1) &amp; 1][j - value]);</div><div class="line">				</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">	</div><div class="line"></div><div class="line">	if (dp[n &amp; 1][sum[n]] == 0)</div><div class="line">		cout&lt;&lt;&quot;-1&quot;&lt;&lt;endl;</div><div class="line">	else</div><div class="line">		cout&lt;&lt;dp[n &amp; 1][sum[n]]&lt;&lt;endl;</div><div class="line">	return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
 
@@ -238,7 +255,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">标记已用</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">动态规划</a>
         		</li>
       		
 		</ul>
@@ -305,7 +322,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/07/rememberWord/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/10/bricks/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -319,18 +336,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/07/10/bricks/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          堆砖块
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/07/07/chessboard/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">涂棋盘</div>
+    <a href="/2017/07/07/rememberWord/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">小易记单词</div>
       <i class="icon-circle-right"></i>
     </a>
   
