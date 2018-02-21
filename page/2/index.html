@@ -136,20 +136,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-omake_5" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-omake_15" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/02/omake_5/">5 自制操作系统第五天</a>
+      <a class="article-title" href="/2018/01/25/omake_15/">15 自制操作系统第十五天</a>
     </h1>
   
 
         
-        <a href="/2017/12/02/omake_5/" class="archive-article-date">
-  	<time datetime="2017-12-01T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-02</time>
+        <a href="/2018/01/25/omake_15/" class="archive-article-date">
+  	<time datetime="2018-01-24T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-25</time>
 </a>
         
       </header>
@@ -159,9 +159,9 @@
         <blockquote>
 <p><a href="https://github.com/huilihuili/omake" target="_blank" rel="external">项目地址</a></p>
 </blockquote>
-<h3 id="harib02a"><a href="#harib02a" class="headerlink" title="harib02a"></a>harib02a</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">void HariMain(void)</div><div class="line">&#123;</div><div class="line">	char *vram;</div><div class="line">	int xsize, ysize;</div><div class="line">	short *binfo_scrnx, *binfo_scrny;</div><div class="line">	int *binfo_vram;</div><div class="line"></div><div class="line">	init_palette();</div><div class="line">	binfo_scrnx = (short *) 0x0ff4;</div><div class="line">	binfo_scrny = (short *) 0x0ff6;</div><div class="line">	binfo_vram = (int *) 0x0ff8;</div><div class="line">	xsize = *binfo_scrnx;</div><div class="line">	ysize = *binfo_scrny;</div><div class="line">	vram = (char *)*binfo_vram;</div><div class="line">	</div><div class="line">	init_screen(vram, xsize, ysize);</div><div class="line">	</div><div class="line">	for (;;) &#123;</div><div class="line">		io_hlt();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">主要内容：</div><div class="line">1. 任务切换（harib12a）</div><div class="line">2. 任务切换进阶（harib12b）</div><div class="line">3. 简单的多任务（1）（harib12c)</div><div class="line">4. 简单的多任务（2）（harib12d）</div><div class="line">5. 提高运行速度（harib12e）</div><div class="line">6. 多任务进阶（harib12g）</div></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2017/12/02/omake_5/#more">more >></a>
+          <a class="article-more-a" href="/2018/01/25/omake_15/#more">more >></a>
         
       
 
@@ -179,11 +179,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">结构体</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">任务切换</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">字符显示</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">多任务</a>
         		</li>
       		
 		</ul>
@@ -204,7 +204,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/02/omake_5/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/25/omake_15/">展开全文 >></a>
         </p>
       
 
@@ -233,20 +233,20 @@
 
 
   
-    <article id="post-omake_4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-omake_14" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/01/omake_4/">4 自制操作系统第四天</a>
+      <a class="article-title" href="/2018/01/24/omake_14/">14 自制操作系统第十四天</a>
     </h1>
   
 
         
-        <a href="/2017/12/01/omake_4/" class="archive-article-date">
-  	<time datetime="2017-11-30T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-01</time>
+        <a href="/2018/01/24/omake_14/" class="archive-article-date">
+  	<time datetime="2018-01-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-24</time>
 </a>
         
       </header>
@@ -256,9 +256,9 @@
         <blockquote>
 <p><a href="https://github.com/huilihuili/omake" target="_blank" rel="external">项目地址</a></p>
 </blockquote>
-<h3 id="harib01a"><a href="#harib01a" class="headerlink" title="harib01a"></a>harib01a</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">_write_mem8:	; void write_mem8(int addr, int data)</div><div class="line">	MOV		ECX, [ESP+4]</div><div class="line">	MOV		AL, [ESP+8]</div><div class="line">	MOV		[ECX], AL</div><div class="line">	RET</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">主要内容：</div><div class="line">1. 提高分辨率（1）（harib11d）</div><div class="line">2. 提高分辨率（2）（harib11e）</div><div class="line">3. 键盘输入（1）（harib11f)</div><div class="line">4. 键盘输入（2）（harib11g）</div><div class="line">5. 追加内容（1）（harib11h）</div><div class="line">6. 窗口瞬间移动（harib11i）</div></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2017/12/01/omake_4/#more">more >></a>
+          <a class="article-more-a" href="/2018/01/24/omake_14/#more">more >></a>
         
       
 
@@ -276,15 +276,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">内存</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">提高分辨率</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指针</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">显示颜色</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">键盘输入</a>
         		</li>
       		
 		</ul>
@@ -305,7 +301,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/01/omake_4/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/24/omake_14/">展开全文 >></a>
         </p>
       
 
@@ -334,118 +330,20 @@
 
 
   
-    <article id="post-omake_3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-omake_13" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/28/omake_3/">3 自制操作系统第三天</a>
+      <a class="article-title" href="/2018/01/23/omake_13/">13 自制操作系统第十三天</a>
     </h1>
   
 
         
-        <a href="/2017/11/28/omake_3/" class="archive-article-date">
-  	<time datetime="2017-11-27T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p><a href="https://github.com/huilihuili/omake" target="_blank" rel="external">项目地址</a></p>
-<p>因为磁盘的最初的512字节是启动盘，所以要装载下一个512字节的内容。</p>
-</blockquote>
-<h3 id="harib00a"><a href="#harib00a" class="headerlink" title="harib00a"></a>harib00a</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">本次要添加的部分</div><div class="line">MOV		AX, 0x0820</div><div class="line">MOV		ES, AX</div><div class="line">MOV		CH, 0			; 柱面0</div><div class="line">MOV		DH, 0			; 磁头0</div><div class="line">MOV		CL, 2			; 扇区2</div><div class="line"></div><div class="line">MOV		AH, 0x02		; AH = 0x02 : 读盘</div><div class="line">MOV		AL, 1			; 1个扇区</div><div class="line">MOV		BX, 0			; </div><div class="line">MOV		DL, 0x00		; A驱动器</div><div class="line">INT		0x13			; 调用磁盘BIOS</div><div class="line">JC		error</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/11/28/omake_3/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">磁盘</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">30天自制操作系统</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">C语言与汇编语言链接</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/读书笔记//" class="article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/28/omake_3/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-    <article id="post-omake_2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/24/omake_2/">2 自制操作系统第二天</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/24/omake_2/" class="archive-article-date">
-  	<time datetime="2017-11-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-24</time>
+        <a href="/2018/01/23/omake_13/" class="archive-article-date">
+  	<time datetime="2018-01-22T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-23</time>
 </a>
         
       </header>
@@ -455,9 +353,9 @@
         <blockquote>
 <p><a href="https://github.com/huilihuili/omake" target="_blank" rel="external">项目地址</a></p>
 </blockquote>
-<h3 id="继续改进helloos-nas"><a href="#继续改进helloos-nas" class="headerlink" title="继续改进helloos.nas"></a>继续改进helloos.nas</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line">; hello-os</div><div class="line">; TAB = 4</div><div class="line">	ORG		0x7c00			;指明程序的装载地址</div><div class="line"></div><div class="line">; 以下这段是标准FAT12格式软盘专用的代码</div><div class="line">	</div><div class="line"></div><div class="line">	JMP 	entry</div><div class="line">	DB 		0x90</div><div class="line">	DB 		&quot;HELLOIPL&quot;		; 启动区的名称可以时任意的字符串(8字节)</div><div class="line">	DW 		512 				; 每个扇区(sector)的大小(必须是512字节)</div><div class="line">	DB 		1				; 簇(cluster）的大小（必须是一个扇区)</div><div class="line">	DW 		1				; FAT的起始位置(一般从第一个扇区开始)</div><div class="line">	DB 		2				; FAT的个数(必须是2)</div><div class="line">	DW 		224				; 根目录的大小(一般设成224项)</div><div class="line">	DW 		2880				; 该磁盘的大小(必须是2880扇区)</div><div class="line">	DB 		0xf0				; 磁盘的种类(必须是0xf0)</div><div class="line">	DW 		9				; FAT的长度(必须是9扇区)</div><div class="line">	DW 		18				; 1个磁道(track)有几个扇区(必须是18)</div><div class="line">	DW 		2				; 磁头数(必须是2)</div><div class="line">	DD 		0				; 不使用分区，必须是0</div><div class="line">	DD 		2880				; 重写一次磁盘大小</div><div class="line">	DB 		0,0,0x29			; 意义不明，固定</div><div class="line">	DD 		0xffffffff		; (可能是)卷标号码</div><div class="line">	DB 		&quot;HELLO-OS   &quot;	; 磁盘的名称(11字节)</div><div class="line">	DB 		&quot;FAT12   &quot;		; 磁盘格式名称(8字节)</div><div class="line">	RESB 	18				; 先空出18字节</div><div class="line"></div><div class="line">; 程序主体</div><div class="line"></div><div class="line">entry:</div><div class="line">	MOV		AX,0			; 初始化寄存器</div><div class="line">	MOV		SS,AX</div><div class="line">	MOV		SP,0x7c00</div><div class="line">	MOV		DS,AX</div><div class="line">	MOV		ES,AX</div><div class="line"></div><div class="line">	MOV		SI,msg</div><div class="line">putloop:</div><div class="line">	MOV		AL,[SI]</div><div class="line">	ADD		SI,1			; 给SI加1</div><div class="line">	CMP		AL,0</div><div class="line">	JE		fin</div><div class="line">	MOV		AH,0x0e			; 显示一个文字</div><div class="line">	MOV		BX,15			; 指定字符颜色</div><div class="line">	INT		0x10			; 调用显卡BIOS</div><div class="line">	JMP		putloop</div><div class="line"></div><div class="line">fin:</div><div class="line">	HLT						; 让CPU停止，等待指令</div><div class="line">	JMP		fin				; 无限循环</div><div class="line">	</div><div class="line">msg:</div><div class="line">	DB		0x0a, 0x0a		; 换行2次</div><div class="line">	DB		&quot;hello, world&quot;</div><div class="line">	DB		0x0a			; 换行</div><div class="line">	DB		0</div><div class="line">	RESB	0x7dfe-$		; </div><div class="line">	DB		0x55, 0xaa</div><div class="line"></div><div class="line">; 以下是启动区以外部分的输出</div><div class="line">	DB 		0xf0, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00</div><div class="line">	RESB 	4600</div><div class="line">	DB 		0xf0, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00</div><div class="line">	RESB 	1469432</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">主要内容：</div><div class="line">1. 简化字符串显示（harib10a）</div><div class="line">2. 调整FIFO缓冲区（1）（harib10b）</div><div class="line">3. 调整FIFO缓冲区（2）（harib10g）</div><div class="line">4. 加快中断处理（4）（harib10h）</div><div class="line">5. 使用“哨兵”简化程序（harib10i）</div></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2017/11/24/omake_2/#more">more >></a>
+          <a class="article-more-a" href="/2018/01/23/omake_13/#more">more >></a>
         
       
 
@@ -475,11 +373,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">寄存器</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">调整FIFO缓冲区</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Makefile</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">加快中断处理</a>
         		</li>
       		
 		</ul>
@@ -500,7 +398,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/24/omake_2/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/23/omake_13/">展开全文 >></a>
         </p>
       
 
@@ -529,20 +427,20 @@
 
 
   
-    <article id="post-omake_1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-omake_12" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/21/omake_1/">1 自制操作系统第一天</a>
+      <a class="article-title" href="/2018/01/22/omake_12/">12 自制操作系统第十二天</a>
     </h1>
   
 
         
-        <a href="/2017/11/21/omake_1/" class="archive-article-date">
-  	<time datetime="2017-11-20T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-21</time>
+        <a href="/2018/01/22/omake_12/" class="archive-article-date">
+  	<time datetime="2018-01-21T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-22</time>
 </a>
         
       </header>
@@ -552,9 +450,9 @@
         <blockquote>
 <p><a href="https://github.com/huilihuili/omake" target="_blank" rel="external">项目地址</a></p>
 </blockquote>
-<h3 id="二进制文件"><a href="#二进制文件" class="headerlink" title="二进制文件"></a>二进制文件</h3><p>有一种工具软件名为“二进制编辑器”（binary editor），是一种能够直接对二进制数进行编辑的软件。<a href="http://www.vcraft.jp/soft/bz.html" target="_blank" rel="external">这里是下载地址</a>，中间有一个Download标识的。我试过notepad++，但是里面不可以复制粘贴。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">主要内容：</div><div class="line">1. 使用定时器（harib09a）</div><div class="line">2. 计量时间（harib09b）</div><div class="line">3. 超时功能（harib09c）</div><div class="line">4. 使用多个定时器（harib09d）</div><div class="line">5. 加快中断处理（1）（harib09e）</div><div class="line">6. 加快中断处理（2）（harib09f）</div><div class="line">7. 加快中断处理（3）（harib09g）</div></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2017/11/21/omake_1/#more">more >></a>
+          <a class="article-more-a" href="/2018/01/22/omake_12/#more">more >></a>
         
       
 
@@ -572,7 +470,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">hello,world</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">定时器</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">定时器的优化</a>
         		</li>
       		
 		</ul>
@@ -593,7 +495,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/21/omake_1/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/22/omake_12/">展开全文 >></a>
         </p>
       
 
@@ -622,119 +524,20 @@
 
 
   
-    <article id="post-code_25" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-omake_11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/18/code_25/">25 图形化革命</a>
+      <a class="article-title" href="/2018/01/21/omake_11/">11 自制操作系统第十一天</a>
     </h1>
   
 
         
-        <a href="/2017/11/18/code_25/" class="archive-article-date">
-  	<time datetime="2017-11-18T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>矢量图形（vector graphics）在一些算法的帮助下，利用直线、曲线及填充区域生成图形。矢量图形在工程和体系结设计中有着十分重要的作用。矢量图形一般转化为图元文件（metafile）格式以存放到文件中。图元文件是由生成矢量图形的一系列绘制命令的集合组成的，这些命令通常已经被编码为二进制形式。</p>
-<p>光栅图形（也称作位图）。位图（bitmap）将图形以矩阵阵列的形式进行编码，阵列中的一个单位对应着输出设备上的一个像素点。</p>
-        
-          <a class="article-more-a" href="/2017/11/18/code_25/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编码(隐匿在计算机软硬件背后的语言)</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">图像的存储</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">音乐的存储</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">图像压缩</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/读书笔记//" class="article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/18/code_25/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-    <article id="post-code_24" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/18/code_24/">24 高级语言与低级语言</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/18/code_24/" class="archive-article-date">
-  	<time datetime="2017-11-18T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
+        <a href="/2018/01/21/omake_11/" class="archive-article-date">
+  	<time datetime="2018-01-20T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-21</time>
 </a>
         
       </header>
@@ -742,10 +545,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>使用机器码编码写程序就如同用牙签吃东西，伸出手臂使出较大的力气刺向食物，但每次只获取到小小的一块，这个过程是辛苦且漫长的。同样的，每个机器码字节所能完成的工作，是你能想象到的最微小且最简单的工作。</p>
+<p><a href="https://github.com/huilihuili/omake" target="_blank" rel="external">项目地址</a></p>
 </blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">主要内容：</div><div class="line">1. 鼠标显示问题（harib08a）</div><div class="line">2. 实现画面外的支持（harib08b）</div><div class="line">3. shtctl的指定缩略（harib08c）</div><div class="line">4. 显示窗口（harib08d）</div><div class="line">5. 小实验（harib08d）</div><div class="line">6. 计数器（harib08e）</div><div class="line">7. 消除闪烁（1）（harib08g）</div><div class="line">8. 消除闪烁（2）（harib08h）</div></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2017/11/18/code_24/#more">more >></a>
+          <a class="article-more-a" href="/2018/01/21/omake_11/#more">more >></a>
         
       
 
@@ -759,11 +563,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编码(隐匿在计算机软硬件背后的语言)</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">30天自制操作系统</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">程序的艺术</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">鼠标显示</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">窗口处理</a>
         		</li>
       		
 		</ul>
@@ -784,7 +592,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/18/code_24/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/21/omake_11/">展开全文 >></a>
         </p>
       
 
@@ -813,29 +621,32 @@
 
 
   
-    <article id="post-code_23" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-omake_10" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/16/code_23/">23 定点数和浮点数</a>
+      <a class="article-title" href="/2018/01/20/omake_10/">10 自制操作系统第十天</a>
     </h1>
   
 
         
-        <a href="/2017/11/16/code_23/" class="archive-article-date">
-  	<time datetime="2017-11-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-16</time>
+        <a href="/2018/01/20/omake_10/" class="archive-article-date">
+  	<time datetime="2018-01-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="数字分类"><a href="#数字分类" class="headerlink" title="数字分类"></a>数字分类</h3><p>自然数，即计算机的整数，包括正整数和负整数，利用2的补数可以让正整数和负整数变得非常简单。</p>
+        <blockquote>
+<p><a href="https://github.com/huilihuili/omake" target="_blank" rel="external">项目地址</a></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">主要内容：</div><div class="line">1. 内存管理（续）（harib07a）</div><div class="line">2. 叠加处理（harib07b）</div><div class="line">3. 提高叠加处理速度（1）（harib07c）</div><div class="line">4. 提高叠加处理速度（2）（harib07d）</div></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2017/11/16/code_23/#more">more >></a>
+          <a class="article-more-a" href="/2018/01/20/omake_10/#more">more >></a>
         
       
 
@@ -849,15 +660,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编码(隐匿在计算机软硬件背后的语言)</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">30天自制操作系统</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">定点数</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">内存管理</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">浮点数</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">叠加处理</a>
         		</li>
       		
 		</ul>
@@ -878,7 +689,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/16/code_23/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/20/omake_10/">展开全文 >></a>
         </p>
       
 
@@ -907,29 +718,32 @@
 
 
   
-    <article id="post-code_22" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-omake_9" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/15/code_22/">22 操作系统</a>
+      <a class="article-title" href="/2018/01/18/omake_9/">9 自制操作系统第九天</a>
     </h1>
   
 
         
-        <a href="/2017/11/15/code_22/" class="archive-article-date">
-  	<time datetime="2017-11-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-15</time>
+        <a href="/2018/01/18/omake_9/" class="archive-article-date">
+  	<time datetime="2018-01-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>为了让一切能正常工作，微处理器在复位的时候需要执行一些代码，称为初始化代码（initialization code）。堆栈指针在运行初始化代码的时候会被设置，以保证堆栈处于内存的有效区域内。位了不让屏幕显示随机字符，初始化代码还把视频显示器内存中的每个字节设置成十六进制数20h，在ASCII码中这是一个空格符。此外，初始化代码还要把光标位在第一行第一列的位置——OUT（Output）指令可以完成这一操作：光标在视频显示器上是以画线的形式出现的——它可以显示出下一个要输入字符的位置。下一条命令是EI，它能开启中断，以便微处理器能够响应键盘中断。EI指令后面是HLT指令，它能是微处理器停止工作。</p>
+        <blockquote>
+<p><a href="https://github.com/huilihuili/omake" target="_blank" rel="external">项目地址</a></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">主要内容：</div><div class="line">1. 文件整理（harib06a）</div><div class="line">2. 内存容量检查（1）（harib06b）</div><div class="line">3. 内存容量检查（2）（harib06c）</div><div class="line">4. 内存管理（harib06d）</div></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2017/11/15/code_22/#more">more >></a>
+          <a class="article-more-a" href="/2018/01/18/omake_9/#more">more >></a>
         
       
 
@@ -943,19 +757,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编码(隐匿在计算机软硬件背后的语言)</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">30天自制操作系统</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">操作系统</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">内存管理</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">键盘处理程序</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">命令处理程序</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">内存容量检查</a>
         		</li>
       		
 		</ul>
@@ -976,7 +786,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/15/code_22/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/18/omake_9/">展开全文 >></a>
         </p>
       
 
@@ -1005,33 +815,32 @@
 
 
   
-    <article id="post-code_21" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-omake_8" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/14/code_21/">21 总线</a>
+      <a class="article-title" href="/2018/01/17/omake_8/">8 自制操作系统第八天</a>
     </h1>
   
 
         
-        <a href="/2017/11/14/code_21/" class="archive-article-date">
-  	<time datetime="2017-11-13T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-14</time>
+        <a href="/2018/01/17/omake_8/" class="archive-article-date">
+  	<time datetime="2018-01-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-17</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>地址总线。这些信号由微处理器产生，通常对RAM进行寻址操作，当然也可以用来对连接到计算机其他设备进行寻址从、操作。</p>
-<p>数据输出信号。这些信号也是由微处理器产生的，用来吧数据写入到RAM或其他设备。  </p>
-<p>数据输入信号。这些信号由计算机的其他部分提供的，并由微处理器读取。通常情况下，数据输入信号由RAM输出，这就解释了微处理器是怎样从内存中读取内容的。  </p>
-<p>控制信号。这些信号是多种多样的，通常与计算机内所用的特定的微处理器相对应。控制信号可以产生于微处理器，也可以由与微处理器通信的其他设备产生。</p>
-<p>总线还可以为计算机不同电路板供电。</p>
+        <blockquote>
+<p><a href="https://github.com/huilihuili/omake" target="_blank" rel="external">项目地址</a></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">主要内容：</div><div class="line">1. 鼠标解读（1）（harib05a）</div><div class="line">2. 代码整理（harib05b）</div><div class="line">3. 鼠标解读（2）（harib05c）</div><div class="line">4. 移动鼠标指针（harib05d）</div><div class="line">5. 通往32位模式之路</div></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2017/11/14/code_21/#more">more >></a>
+          <a class="article-more-a" href="/2018/01/17/omake_8/#more">more >></a>
         
       
 
@@ -1045,19 +854,19 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编码(隐匿在计算机软硬件背后的语言)</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">30天自制操作系统</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">微处理器和RAM之间的调用</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">鼠标解读</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">图像的形成</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">移动鼠标</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">磁盘</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">asmhead.nas解读</a>
         		</li>
       		
 		</ul>
@@ -1078,7 +887,217 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/14/code_21/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/17/omake_8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+    <article id="post-omake_7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/16/omake_7/">7 自制操作系统第七天</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/16/omake_7/" class="archive-article-date">
+  	<time datetime="2018-01-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p><a href="https://github.com/huilihuili/omake" target="_blank" rel="external">项目地址</a></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">主要内容：</div><div class="line">1. 获取按键编码（harib04a）</div><div class="line">2. 加快中断处理（harib04b）</div><div class="line">3. 制作FIFO缓冲区（harib04c）</div><div class="line">4. 改善FIFO缓冲区（harib04d）</div><div class="line">5. 整理FIFO缓冲区（harib04e）</div><div class="line">6. 激活鼠标（harib04f）</div><div class="line">7. 从鼠标获取数据（harib04g）</div></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2018/01/16/omake_7/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">30天自制操作系统</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">按键编码</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">FIFO缓冲区</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">激活鼠标</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/读书笔记//" class="article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/01/16/omake_7/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+    <article id="post-omake_6" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/14/omake_6/">6 自制操作系统第六天</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/14/omake_6/" class="archive-article-date">
+  	<time datetime="2018-01-13T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p><a href="https://github.com/huilihuili/omake" target="_blank" rel="external">项目地址</a></p>
+</blockquote>
+<h3 id="harib03a（分割源文件）"><a href="#harib03a（分割源文件）" class="headerlink" title="harib03a（分割源文件）"></a>harib03a（分割源文件）</h3><p>graphic.c  关于描述画面的处理<br>dsctbl.c  关于GDT，IDT等 descriptor table的处理<br>bootpack.c  主要调用</p>
+        
+          <a class="article-more-a" href="/2018/01/14/omake_6/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">30天自制操作系统</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">文件分割</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">GDT</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PIC</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">中断处理</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">汇编中的栈</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/读书笔记//" class="article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/01/14/omake_6/">展开全文 >></a>
         </p>
       
 
@@ -1109,7 +1128,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
 
@@ -1586,6 +1605,74 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">键盘输入</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">任务管理自动化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">任务优先级</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">字符输入</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">type命令</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">单个字符的API</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">字符串的API</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">保护操作系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">C语言调用API</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">窗口切换</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">窗口移动</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">鼠标关闭窗口</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">增加颜色</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">增加命令行窗口</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">窗口控制</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">窗口命令</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">画点</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">画直线</a>
               </li>
             
             <div class="clearfix"></div>
