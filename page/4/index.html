@@ -144,6 +144,201 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-omake_3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/28/omake_3/">3 自制操作系统第三天</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/28/omake_3/" class="archive-article-date">
+  	<time datetime="2017-11-27T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p><a href="https://github.com/huilihuili/omake" target="_blank" rel="external">项目地址</a></p>
+<p>因为磁盘的最初的512字节是启动盘，所以要装载下一个512字节的内容。</p>
+</blockquote>
+<h3 id="harib00a"><a href="#harib00a" class="headerlink" title="harib00a"></a>harib00a</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">本次要添加的部分</div><div class="line">MOV		AX, 0x0820</div><div class="line">MOV		ES, AX</div><div class="line">MOV		CH, 0			; 柱面0</div><div class="line">MOV		DH, 0			; 磁头0</div><div class="line">MOV		CL, 2			; 扇区2</div><div class="line"></div><div class="line">MOV		AH, 0x02		; AH = 0x02 : 读盘</div><div class="line">MOV		AL, 1			; 1个扇区</div><div class="line">MOV		BX, 0			; </div><div class="line">MOV		DL, 0x00		; A驱动器</div><div class="line">INT		0x13			; 调用磁盘BIOS</div><div class="line">JC		error</div></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2017/11/28/omake_3/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">磁盘</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">30天自制操作系统</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">C语言与汇编语言链接</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/读书笔记//" class="article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/28/omake_3/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+    <article id="post-omake_2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/24/omake_2/">2 自制操作系统第二天</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/24/omake_2/" class="archive-article-date">
+  	<time datetime="2017-11-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p><a href="https://github.com/huilihuili/omake" target="_blank" rel="external">项目地址</a></p>
+</blockquote>
+<h3 id="继续改进helloos-nas"><a href="#继续改进helloos-nas" class="headerlink" title="继续改进helloos.nas"></a>继续改进helloos.nas</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line">; hello-os</div><div class="line">; TAB = 4</div><div class="line">	ORG		0x7c00			;指明程序的装载地址</div><div class="line"></div><div class="line">; 以下这段是标准FAT12格式软盘专用的代码</div><div class="line">	</div><div class="line"></div><div class="line">	JMP 	entry</div><div class="line">	DB 		0x90</div><div class="line">	DB 		&quot;HELLOIPL&quot;		; 启动区的名称可以时任意的字符串(8字节)</div><div class="line">	DW 		512 				; 每个扇区(sector)的大小(必须是512字节)</div><div class="line">	DB 		1				; 簇(cluster）的大小（必须是一个扇区)</div><div class="line">	DW 		1				; FAT的起始位置(一般从第一个扇区开始)</div><div class="line">	DB 		2				; FAT的个数(必须是2)</div><div class="line">	DW 		224				; 根目录的大小(一般设成224项)</div><div class="line">	DW 		2880				; 该磁盘的大小(必须是2880扇区)</div><div class="line">	DB 		0xf0				; 磁盘的种类(必须是0xf0)</div><div class="line">	DW 		9				; FAT的长度(必须是9扇区)</div><div class="line">	DW 		18				; 1个磁道(track)有几个扇区(必须是18)</div><div class="line">	DW 		2				; 磁头数(必须是2)</div><div class="line">	DD 		0				; 不使用分区，必须是0</div><div class="line">	DD 		2880				; 重写一次磁盘大小</div><div class="line">	DB 		0,0,0x29			; 意义不明，固定</div><div class="line">	DD 		0xffffffff		; (可能是)卷标号码</div><div class="line">	DB 		&quot;HELLO-OS   &quot;	; 磁盘的名称(11字节)</div><div class="line">	DB 		&quot;FAT12   &quot;		; 磁盘格式名称(8字节)</div><div class="line">	RESB 	18				; 先空出18字节</div><div class="line"></div><div class="line">; 程序主体</div><div class="line"></div><div class="line">entry:</div><div class="line">	MOV		AX,0			; 初始化寄存器</div><div class="line">	MOV		SS,AX</div><div class="line">	MOV		SP,0x7c00</div><div class="line">	MOV		DS,AX</div><div class="line">	MOV		ES,AX</div><div class="line"></div><div class="line">	MOV		SI,msg</div><div class="line">putloop:</div><div class="line">	MOV		AL,[SI]</div><div class="line">	ADD		SI,1			; 给SI加1</div><div class="line">	CMP		AL,0</div><div class="line">	JE		fin</div><div class="line">	MOV		AH,0x0e			; 显示一个文字</div><div class="line">	MOV		BX,15			; 指定字符颜色</div><div class="line">	INT		0x10			; 调用显卡BIOS</div><div class="line">	JMP		putloop</div><div class="line"></div><div class="line">fin:</div><div class="line">	HLT						; 让CPU停止，等待指令</div><div class="line">	JMP		fin				; 无限循环</div><div class="line">	</div><div class="line">msg:</div><div class="line">	DB		0x0a, 0x0a		; 换行2次</div><div class="line">	DB		&quot;hello, world&quot;</div><div class="line">	DB		0x0a			; 换行</div><div class="line">	DB		0</div><div class="line">	RESB	0x7dfe-$		; </div><div class="line">	DB		0x55, 0xaa</div><div class="line"></div><div class="line">; 以下是启动区以外部分的输出</div><div class="line">	DB 		0xf0, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00</div><div class="line">	RESB 	4600</div><div class="line">	DB 		0xf0, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00</div><div class="line">	RESB 	1469432</div></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2017/11/24/omake_2/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">30天自制操作系统</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">寄存器</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Makefile</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/读书笔记//" class="article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/24/omake_2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
     <article id="post-omake_1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -209,98 +404,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/11/21/omake_1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-    <article id="post-code_24" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/18/code_24/">24 高级语言与低级语言</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/18/code_24/" class="archive-article-date">
-  	<time datetime="2017-11-18T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>使用机器码编码写程序就如同用牙签吃东西，伸出手臂使出较大的力气刺向食物，但每次只获取到小小的一块，这个过程是辛苦且漫长的。同样的，每个机器码字节所能完成的工作，是你能想象到的最微小且最简单的工作。</p>
-</blockquote>
-        
-          <a class="article-more-a" href="/2017/11/18/code_24/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编码(隐匿在计算机软硬件背后的语言)</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">程序的艺术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/读书笔记//" class="article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/18/code_24/">展开全文 >></a>
         </p>
       
 
@@ -400,6 +503,98 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/11/18/code_25/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+    <article id="post-code_24" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/18/code_24/">24 高级语言与低级语言</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/18/code_24/" class="archive-article-date">
+  	<time datetime="2017-11-18T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>使用机器码编码写程序就如同用牙签吃东西，伸出手臂使出较大的力气刺向食物，但每次只获取到小小的一块，这个过程是辛苦且漫长的。同样的，每个机器码字节所能完成的工作，是你能想象到的最微小且最简单的工作。</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2017/11/18/code_24/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编码(隐匿在计算机软硬件背后的语言)</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">程序的艺术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/读书笔记//" class="article-tag-list-link color5">读书笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/18/code_24/">展开全文 >></a>
         </p>
       
 
@@ -902,189 +1097,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/11/12/code_19/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-    <article id="post-code_18" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/11/code_18/">18 从算盘到芯片</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/11/code_18/" class="archive-article-date">
-  	<time datetime="2017-11-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>算盘计算。</p>
-<p>对数：两个数乘积就可以简单地表示为其对数之和。</p>
-<p>一些人设计一些小装置期望代替对数表。其中，一种带对数刻度的滑尺久负盛名。</p>
-<p>差分机和解析机。</p>
-        
-          <a class="article-more-a" href="/2017/11/11/code_18/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编码(隐匿在计算机软硬件背后的语言)</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">微处理器的发展</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/读书笔记//" class="article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/11/code_18/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-    <article id="post-code_17" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/01/code_17/">17 自动操作</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/01/code_17/" class="archive-article-date">
-  	<time datetime="2017-10-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>如果要把100个二进制加起来，你必须端坐在加法器前，并且耐心地输入所有的数并累加起来。但是当你终于完成时，却发现其中有两个数错了，而你只能重复一遍所有的功能。</p>
-        
-          <a class="article-more-a" href="/2017/11/01/code_17/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编码(隐匿在计算机软硬件背后的语言)</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">汇编语言的由来</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/读书笔记//" class="article-tag-list-link color5">读书笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/01/code_17/">展开全文 >></a>
         </p>
       
 
@@ -1704,6 +1716,22 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">电影评论分析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">word</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">xml</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">模板</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">servlet</a>
               </li>
             
             <div class="clearfix"></div>
