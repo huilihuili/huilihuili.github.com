@@ -144,6 +144,104 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-wordToXml" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/28/wordToXml/">word文档题库转化为xml文件</a>
+    </h1>
+  
+
+        
+        <a href="/2017/07/28/wordToXml/" class="archive-article-date">
+  	<time datetime="2017-07-28T12:47:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="需求："><a href="#需求：" class="headerlink" title="需求："></a>需求：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">word文档转为xml文件</div><div class="line">      </div><div class="line">word文档如下：</div><div class="line">一、单选题（220题）</div><div class="line">1、消防头盔经高温、低温、浸水、热辐射预处理后进行冲击吸收性能试验，头模所受冲击力的最大值应不大于，帽壳不得有碎片脱落。（A）</div><div class="line">A、3780NB、3380NC、3580N D、3680N</div><div class="line">      </div><div class="line">二、多选题（200题） 1、消防员灭火防护服撕破强力不小于多少N，下列错误的是（ BCD）</div><div class="line">A、100 B、200 C、300 D、400</div><div class="line">      </div><div class="line">三、是非题（180题） 1、消防员灭火防护服的面料由外层、防水透气层、隔热层、舒适层组成。（√）</div><div class="line">      </div><div class="line">转为xml文件如下：</div><div class="line">      </div><div class="line">&lt;ArrayOfTopic&gt; </div><div class="line">     &lt;Topic&gt; </div><div class="line">         &lt;TopicType&gt;1&lt;/TopicType&gt;</div><div class="line">         &lt;Ask&gt;消防头盔经高温、低温、浸水、热辐射预处理后进行冲击吸收性能试验，头模所受冲击力的最大值应不大于，帽壳不得有碎片脱落。（）&lt;/Ask&gt;</div><div class="line">         &lt;Answer&gt;A&lt;/Answer&gt; </div><div class="line">         &lt;Option&gt; </div><div class="line">             &lt;string&gt;A、3780N&lt;/string&gt;</div><div class="line">             &lt;string&gt;B、3380N&lt;/string&gt; </div><div class="line">             &lt;string&gt;C、3580N&lt;/string&gt;</div><div class="line">             &lt;string&gt;D、3680N&lt;/string&gt; </div><div class="line">         &lt;/Option&gt; </div><div class="line">     &lt;/Topic&gt;</div><div class="line">      </div><div class="line">     &lt;Topic&gt; </div><div class="line">         &lt;TopicType&gt;2&lt;/TopicType&gt;</div><div class="line">         &lt;Ask&gt;消防员灭火防护服撕破强力不小于多少N，下列错误的是（）&lt;/Ask&gt; </div><div class="line">         &lt;Answer&gt;BCD&lt;/Answer&gt;</div><div class="line">         &lt;Option&gt; </div><div class="line">             &lt;string&gt;A、10&lt;/string&gt;</div><div class="line">             &lt;string&gt;B、20&lt;/string&gt;</div><div class="line">             &lt;string&gt;C、30&lt;/string&gt; </div><div class="line">             &lt;string&gt;D、400&lt;/string&gt; </div><div class="line">         &lt;/Option&gt;</div><div class="line">     &lt;/Topic&gt;</div><div class="line">      </div><div class="line">     &lt;Topic&gt; </div><div class="line">         &lt;TopicType&gt;3&lt;/TopicType&gt;</div><div class="line">         &lt;Ask&gt;消防员灭火防护服的面料由外层、防水透气层、隔热层、舒适层组成。（）&lt;/Ask&gt;</div><div class="line">         &lt;Answer&gt;A&lt;/Answer&gt; </div><div class="line">     &lt;/Topic&gt;</div><div class="line">&lt;/ArrayOfTopic&gt;</div></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2017/07/28/wordToXml/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">poi</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">dom4j</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">word文档题库解析</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">xml文件创建</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/小工具//" class="article-tag-list-link color4">小工具</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/28/wordToXml/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
     <article id="post-queue" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1009,106 +1107,6 @@
 
 
   
-    <article id="post-magicBracelet" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/02/magicBracelet/">魔力手环</a>
-    </h1>
-  
-
-        
-        <a href="/2017/07/02/magicBracelet/" class="archive-article-date">
-  	<time datetime="2017-07-02T04:48:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>题目链接：<a href="https://www.nowcoder.com/questionTerminal/79c639e02bc94e6b919e3372c8e1dc5e" target="_blank" rel="external">网易2017春招笔试真题编程题集合第五题</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">时间限制：1秒</div><div class="line">空间限制：32768K</div></pre></td></tr></table></figure>
-<p>小易拥有一个拥有魔力的手环上面有n个数字(构成一个环),当这个魔力手环每次使用魔力的时候就会发生一种奇特的变化：每个数字会变成自己跟后面一个数字的和(最后一个数字的后面一个数字是第一个),一旦某个位置的数字大于等于100就马上对100取模(比如某个位置变为103,就会自动变为3).现在给出这个魔力手环的构成，请你计算出使用k次魔力之后魔力手环的状态。</p>
-        
-          <a class="article-more-a" href="/2017/07/02/magicBracelet/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">快速幂取余</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">矩阵相乘</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试//" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/02/magicBracelet/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/6/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/8/">Next &raquo;</a>
@@ -1720,6 +1718,30 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">工作整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">java编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">this</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Random</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">逻辑操作符</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">移位操作符</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">java提升</a>
               </li>
             
             <div class="clearfix"></div>
