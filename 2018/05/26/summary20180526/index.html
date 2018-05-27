@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Leagle的博客</title>
+  <title>总结：20180520~20180526 | Leagle的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="无名小卒其实我不是土木工程专业的。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Leagle的博客">
-<meta property="og:url" content="http://yoursite.com/archives/page/7/index.html">
+  <meta name="description" content="123456789101112重构教育大数据失败java编程思想    - 成员的初始化    - 对象的创建过程    - 访问权限修饰词    - 继承（字段不共享）    - 构造器内部的多态方法    - 关于容器    - retun与finally    - 异常轨迹    - 不可变String    - &amp;quot;+&amp;quot; 和 StringBuilder">
+<meta name="keywords" content="工作整理,java编程思想">
+<meta property="og:type" content="article">
+<meta property="og:title" content="总结：20180520~20180526">
+<meta property="og:url" content="http://yoursite.com/2018/05/26/summary20180526/index.html">
 <meta property="og:site_name" content="Leagle的博客">
-<meta property="og:description" content="无名小卒其实我不是土木工程专业的。">
+<meta property="og:description" content="123456789101112重构教育大数据失败java编程思想    - 成员的初始化    - 对象的创建过程    - 访问权限修饰词    - 继承（字段不共享）    - 构造器内部的多态方法    - 关于容器    - retun与finally    - 异常轨迹    - 不可变String    - &amp;quot;+&amp;quot; 和 StringBuilder">
+<meta property="og:updated_time" content="2018-05-27T13:16:57.213Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leagle的博客">
-<meta name="twitter:description" content="无名小卒其实我不是土木工程专业的。">
+<meta name="twitter:title" content="总结：20180520~20180526">
+<meta name="twitter:description" content="123456789101112重构教育大数据失败java编程思想    - 成员的初始化    - 对象的创建过程    - 访问权限修饰词    - 继承（字段不共享）    - 构造器内部的多态方法    - 关于容器    - retun与finally    - 异常轨迹    - 不可变String    - &amp;quot;+&amp;quot; 和 StringBuilder">
   
     <link rel="alternative" href="/atom.xml" title="Leagle的博客" type="application/atom+xml">
   
@@ -142,597 +144,232 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-summary20180526" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      总结：20180520~20180526
+    </h1>
+  
+
+        
+        <a href="/2018/05/26/summary20180526/" class="archive-article-date">
+  	<time datetime="2018-05-26T09:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">重构教育大数据失败</div><div class="line">java编程思想</div><div class="line">    - 成员的初始化</div><div class="line">    - 对象的创建过程</div><div class="line">    - 访问权限修饰词</div><div class="line">    - 继承（字段不共享）</div><div class="line">    - 构造器内部的多态方法</div><div class="line">    - 关于容器</div><div class="line">    - retun与finally</div><div class="line">    - 异常轨迹</div><div class="line">    - 不可变String</div><div class="line">    - &quot;+&quot; 和 StringBuilder</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="重构教育大数据"><a href="#重构教育大数据" class="headerlink" title="重构教育大数据"></a>重构教育大数据</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">重构前，想到了很多好用的点子，像继承，耦合等等。</div><div class="line">写了两天，实现了一两个功能，发现代码还可以。</div><div class="line">又继续写了几个功能块，发现代码还是挤在了一起，无法耦合。</div><div class="line">鉴于后面还有好多功能块都还没有实现，就放弃了。</div></pre></td></tr></table></figure>
+<h2 id="java编程思想"><a href="#java编程思想" class="headerlink" title="java编程思想"></a>java编程思想</h2><h3 id="成员的初始化"><a href="#成员的初始化" class="headerlink" title="成员的初始化"></a>成员的初始化</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line">class InitialValues &#123;</div><div class="line">	boolean t;</div><div class="line">	char c;</div><div class="line">	byte b;</div><div class="line">	short s;</div><div class="line">	int i;</div><div class="line">	long l;</div><div class="line">	float f;</div><div class="line">	double d;</div><div class="line">	InitialValues reference;</div><div class="line"></div><div class="line">	void printInitialValues() &#123;</div><div class="line">		System.out.println(&quot;Data Type Initial Value&quot;);</div><div class="line">		System.out.println(&quot;boolean &quot; + t);</div><div class="line">		System.out.println(&quot;char [&quot; + c + &quot;]&quot;);</div><div class="line">		System.out.println(&quot;byte &quot; + b);</div><div class="line">		System.out.println(&quot;short &quot; + s);</div><div class="line">		System.out.println(&quot;int &quot; + i);</div><div class="line">		System.out.println(&quot;long &quot; + l);</div><div class="line">		System.out.println(&quot;float &quot; + f);</div><div class="line">		System.out.println(&quot;d &quot; + d);</div><div class="line">		System.out.println(&quot;reference &quot; + reference);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@Test</div><div class="line">public void test2() &#123;</div><div class="line">	new InitialValues().printInitialValues();</div><div class="line">&#125;</div><div class="line"></div><div class="line">Data Type Initial Value</div><div class="line">boolean false</div><div class="line">char [ ]</div><div class="line">byte 0</div><div class="line">short 0</div><div class="line">int 0</div><div class="line">long 0</div><div class="line">float 0.0</div><div class="line">d 0.0</div><div class="line">reference null</div><div class="line"></div><div class="line">char值为0，所以显示为空白</div></pre></td></tr></table></figure>
+<h3 id="对象的创建过程"><a href="#对象的创建过程" class="headerlink" title="对象的创建过程"></a>对象的创建过程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">假设有个名为Dog的类：</div><div class="line">1.即使没有显式地使用static关键字，构造器实际上也是静态方法。因此，当首次创建类型为Dog的对象时，或者Dog类的静态方法/静态域首次被访问时，java解释器必须查找类路径，以定位Dog.class文件</div><div class="line">2.然后载入Dog.class，有关静态初始化的所有动作都会执行。因此，静态初始化只在Class对象首次加载的时候运行一次。</div><div class="line">3.当使用new Dog()创建对象的时候，首先将堆上为Dog对象分配足够的存储空间。</div><div class="line">4.这块存储空间为被清零，这就自动地将Dog对象的所有基本类型数据都设置成了默认值，而引用则被设置成了null。</div><div class="line">5.执行所有出现于字段定义处的初始化动作。</div><div class="line">6.执行构造器。</div></pre></td></tr></table></figure>
+<h3 id="访问权限修饰词"><a href="#访问权限修饰词" class="headerlink" title="访问权限修饰词"></a>访问权限修饰词</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">public：哪里都可以访问</div><div class="line">protected：继承类可以访问，相同包内的其他类可以访问</div><div class="line">没有关键词：包访问权限</div><div class="line">private：除了包含该成员的类之外，其他任何类都无法访问这个成员。</div></pre></td></tr></table></figure>
+<h3 id="继承（字段不共享）"><a href="#继承（字段不共享）" class="headerlink" title="继承（字段不共享）"></a>继承（字段不共享）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">class Super &#123;</div><div class="line">	public int field = 0;</div><div class="line"></div><div class="line">	public int getField() &#123;</div><div class="line">		return field;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">class Sub extends Super &#123;</div><div class="line">	public int field = 1;</div><div class="line"></div><div class="line">	@Override</div><div class="line">	public int getField() &#123;</div><div class="line">		return field;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	public int getSuperSield() &#123;</div><div class="line">		return super.field;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@Test</div><div class="line">public void test1() &#123;</div><div class="line">	Super sup = new Sub();</div><div class="line">	System.out.println(&quot;sup.field = &quot; + sup.field + &quot;, sup.getField() = &quot; + sup.getField());</div><div class="line">	</div><div class="line">	Sub sub = new Sub();</div><div class="line">	System.out.println(&quot;sub.field = &quot; + sub.field + &quot;, sub.getField() = &quot; + sub.getField() + &quot;, sub.getSuperField() = &quot; + sub.getSuperSield());</div><div class="line">&#125;</div><div class="line"></div><div class="line">sup.field = 0, sup.getField() = 1</div><div class="line">sub.field = 1, sub.getField() = 1, sub.getSuperField() = 0</div></pre></td></tr></table></figure>
+<h3 id="构造器内部的多态方法"><a href="#构造器内部的多态方法" class="headerlink" title="构造器内部的多态方法"></a>构造器内部的多态方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">class Glypy &#123;</div><div class="line">	void draw() &#123;</div><div class="line">		System.out.println(&quot;Glyph.draw()&quot;);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	public Glypy() &#123;</div><div class="line">		System.out.println(&quot;Glyph() before draw()&quot;);</div><div class="line">		draw();</div><div class="line">		System.out.println(&quot;Glypy() after draw()&quot;);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">class RoundGlyph extends Glypy &#123;</div><div class="line">	private int radius = 1;</div><div class="line"></div><div class="line">	public RoundGlyph(int r) &#123;</div><div class="line">		radius = r;</div><div class="line">		System.out.println(&quot;GoundGlyph.RoundGlyph(), radius = &quot; + radius);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	@Override</div><div class="line">	void draw() &#123;</div><div class="line">		System.out.println(&quot;GoundGlyph.draw(), radius = &quot; + radius);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@Test</div><div class="line">public void test2() &#123;</div><div class="line">	new RoundGlyph(5);</div><div class="line">&#125;</div><div class="line"></div><div class="line">Glyph() before draw()</div><div class="line">GoundGlyph.draw(), radius = 0</div><div class="line">Glypy() after draw()</div><div class="line">GoundGlyph.RoundGlyph(), radius = 5</div></pre></td></tr></table></figure>
+<h3 id="关于容器"><a href="#关于容器" class="headerlink" title="关于容器"></a>关于容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">List</div><div class="line">    - ArrayList</div><div class="line">    - LinkedList</div><div class="line">    </div><div class="line">set</div><div class="line">    - HashSet</div><div class="line">    - TreeSet</div><div class="line">    - LinkedHashSet</div><div class="line"></div><div class="line">Map</div><div class="line">    - HashMap</div><div class="line">    - TreeMap </div><div class="line">    - LinkedHashMap</div></pre></td></tr></table></figure>
+<h3 id="retun与finally"><a href="#retun与finally" class="headerlink" title="retun与finally"></a>retun与finally</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line">public static void f(int i) &#123;</div><div class="line">	System.out.println(&quot;Initialization that requires cleanup&quot;);</div><div class="line">	try &#123;</div><div class="line">		System.out.println(&quot;Point 1&quot;);</div><div class="line">		if (i == 1) &#123;</div><div class="line">			return;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		System.out.println(&quot;Point 2&quot;);</div><div class="line">		if (i == 2) &#123;</div><div class="line">			return;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		System.out.println(&quot;Point 3&quot;);</div><div class="line">		if (i == 3) &#123;</div><div class="line">			return;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		System.out.println(&quot;End&quot;);</div><div class="line">		return;</div><div class="line">	&#125; finally &#123;</div><div class="line">		System.out.println(&quot;Performing cleanup&quot;);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@Test</div><div class="line">public void test1() &#123;</div><div class="line">	for (int i = 1; i &lt;= 4; i++) &#123;</div><div class="line">		f(i);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">Initialization that requires cleanup</div><div class="line">Point 1</div><div class="line">Performing cleanup</div><div class="line">Initialization that requires cleanup</div><div class="line">Point 1</div><div class="line">Point 2</div><div class="line">Performing cleanup</div><div class="line">Initialization that requires cleanup</div><div class="line">Point 1</div><div class="line">Point 2</div><div class="line">Point 3</div><div class="line">Performing cleanup</div><div class="line">Initialization that requires cleanup</div><div class="line">Point 1</div><div class="line">Point 2</div><div class="line">Point 3</div><div class="line">End</div><div class="line">Performing cleanup</div></pre></td></tr></table></figure>
+<h3 id="异常轨迹"><a href="#异常轨迹" class="headerlink" title="异常轨迹"></a>异常轨迹</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">public static void f() &#123;</div><div class="line">	try &#123;</div><div class="line">		throw new Exception();</div><div class="line">	&#125; catch (Exception e) &#123;</div><div class="line">		for (StackTraceElement ste : e.getStackTrace()) &#123;</div><div class="line">			System.out.println(ste.getMethodName());</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">public static void g() &#123;</div><div class="line">	f();</div><div class="line">&#125;</div><div class="line"></div><div class="line">public static void h() &#123;</div><div class="line">	g();</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">public static void main(String[] args) &#123;</div><div class="line">	f();</div><div class="line">	System.out.println(&quot;-------------------------&quot;);</div><div class="line">	g();</div><div class="line">	System.out.println(&quot;-------------------------&quot;);</div><div class="line">	h();</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">f</div><div class="line">main</div><div class="line">-------------------------</div><div class="line">f</div><div class="line">g</div><div class="line">main</div><div class="line">-------------------------</div><div class="line">f</div><div class="line">g</div><div class="line">h</div><div class="line">main</div></pre></td></tr></table></figure>
+<h3 id="不可变String"><a href="#不可变String" class="headerlink" title="不可变String"></a>不可变String</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">public static String upcase(String s) &#123;</div><div class="line">	return s.toUpperCase();</div><div class="line">&#125;</div><div class="line"></div><div class="line">@Test</div><div class="line">public void test1() &#123;</div><div class="line">	String q = &quot;howdy&quot;;</div><div class="line">	System.out.println(q);</div><div class="line">	String qq = upcase(q);</div><div class="line">	System.out.println(qq);</div><div class="line">	System.out.println(q);</div><div class="line">&#125;</div><div class="line"></div><div class="line">howdy</div><div class="line">HOWDY</div><div class="line">howdy</div></pre></td></tr></table></figure>
+<h3 id="“-”-和-StringBuilder"><a href="#“-”-和-StringBuilder" class="headerlink" title="“+” 和 StringBuilder"></a>“+” 和 StringBuilder</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">简单的输出可以直接使用字符串的加号</div><div class="line">但凡在循环中出现字符串叠加，使用StringBuilder性能会比价好。</div></pre></td></tr></table></figure>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/weChat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/10/21/code_1/" class="archive-article-date">
-  	<time datetime="2017-10-20T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/21/code_1/">1 至亲密友</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">编码(隐匿在计算机软硬件背后的语言)</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">工作整理</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">莫尔斯电码</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">java编程思想</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/读书笔记//" class="article-tag-list-link color5">读书笔记</a>
+        			<a href="/categories/总结//" class="article-tag-list-link color3">总结</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/05/26/summary20180526/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/28/wordToXml/" class="archive-article-date">
-  	<time datetime="2017-07-28T12:47:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-28</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/05/19/summary20180519/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">总结：20180513~20180519</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/28/wordToXml/">word文档题库转化为xml文件</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">poi</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">dom4j</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">word文档题库解析</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">xml文件创建</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/小工具//" class="article-tag-list-link color4">小工具</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#重构教育大数据"><span class="toc-number">1.</span> <span class="toc-text">重构教育大数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#java编程思想"><span class="toc-number">2.</span> <span class="toc-text">java编程思想</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#成员的初始化"><span class="toc-number">2.1.</span> <span class="toc-text">成员的初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象的创建过程"><span class="toc-number">2.2.</span> <span class="toc-text">对象的创建过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#访问权限修饰词"><span class="toc-number">2.3.</span> <span class="toc-text">访问权限修饰词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#继承（字段不共享）"><span class="toc-number">2.4.</span> <span class="toc-text">继承（字段不共享）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#构造器内部的多态方法"><span class="toc-number">2.5.</span> <span class="toc-text">构造器内部的多态方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于容器"><span class="toc-number">2.6.</span> <span class="toc-text">关于容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#retun与finally"><span class="toc-number">2.7.</span> <span class="toc-text">retun与finally</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#异常轨迹"><span class="toc-number">2.8.</span> <span class="toc-text">异常轨迹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#不可变String"><span class="toc-number">2.9.</span> <span class="toc-text">不可变String</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#“-”-和-StringBuilder"><span class="toc-number">2.10.</span> <span class="toc-text">“+” 和 StringBuilder</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/13/queue/" class="archive-article-date">
-  	<time datetime="2017-07-13T09:09:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/13/queue/">构造队列</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">网易有道</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">队列</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/内推编程//" class="article-tag-list-link color5">内推编程</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/13/cards/" class="archive-article-date">
-  	<time datetime="2017-07-13T09:08:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/13/cards/">洗牌</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">网易有道</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">找规律</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/内推编程//" class="article-tag-list-link color5">内推编程</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/11/cookies/" class="archive-article-date">
-  	<time datetime="2017-07-11T08:18:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/11/cookies/">分饼干</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">动态规划</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试//" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/10/bricks/" class="archive-article-date">
-  	<time datetime="2017-07-10T08:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/10/bricks/">堆砖块</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">动态规划</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试//" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/07/rememberWord/" class="archive-article-date">
-  	<time datetime="2017-07-07T09:44:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/07/rememberWord/">小易记单词</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">标记已用</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试//" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/07/chessboard/" class="archive-article-date">
-  	<time datetime="2017-07-07T08:37:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/07/chessboard/">涂棋盘</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">连续区域长度</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试//" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/07/expression/" class="archive-article-date">
-  	<time datetime="2017-07-07T07:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/07/expression/">奇怪的表达式</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">栈</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试//" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/04/collection/" class="archive-article-date">
-  	<time datetime="2017-07-04T04:03:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-04</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/04/collection/">集合</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">网易</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">去除重复</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/校招笔试//" class="article-tag-list-link color5">校招笔试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/page/6/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="page-number" href="/archives/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/archives/page/8/">8</a><a class="extend next" rel="next" href="/archives/page/8/">Next &raquo;</a>
-    </nav>
   
 
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2018/05/26/summary20180526/",
+  owner: 'huilihuili',
+  repo: 'huilihuili.github.io',
+  oauth: {
+    client_id: 'e8d8bdca4e7c76e5c779',
+    client_secret: '5ab8f5debe8fcd1f58a539dac5ff66ff3d87b3a1',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
           </div>
         </div>
@@ -754,8 +391,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
